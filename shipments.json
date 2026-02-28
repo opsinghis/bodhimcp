@@ -1,0 +1,5981 @@
+[
+  {
+    "shipment_id": "SHP-001",
+    "order_id": "ORD-10001",
+    "tracking_number": "RM100007919GB",
+    "status": "delivered",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Emma Smith",
+      "email": "emma.smith@example.com",
+      "phone": "+447000000000"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "4 High Street",
+      "city": "London",
+      "postcode": "SW1A 1AA",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "142784C01",
+        "product_name": "Stars & Stones Ring",
+        "quantity": 1,
+        "price": 45
+      },
+      {
+        "product_id": "192830C01",
+        "product_name": "Celestial Sparkling Star Stud Earrings",
+        "quantity": 1,
+        "price": 40
+      },
+      {
+        "product_id": "590528",
+        "product_name": "Pandora Moments Barrel Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-01",
+      "shipped": "2026-02-02",
+      "estimated_delivery": "2026-02-05",
+      "actual_delivery": "2026-02-04"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-01T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-02T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-02T14:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      },
+      {
+        "timestamp": "2026-02-03T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-04T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "London",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-04T14:15:00Z",
+        "status": "delivered",
+        "location": "London",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": true,
+      "insurance": true
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-002",
+    "order_id": "ORD-10002",
+    "tracking_number": "DPD1000158381",
+    "status": "delivered",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Oliver Jones",
+      "email": "oliver.jones@example.com",
+      "phone": "+447001234567"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "11 Church Lane",
+      "city": "Manchester",
+      "postcode": "M1 1AE",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "163291C01",
+        "product_name": "Blue Pansy Flower Pendant Necklace",
+        "quantity": 1,
+        "price": 70
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-02",
+      "shipped": "2026-02-03",
+      "estimated_delivery": "2026-02-06",
+      "actual_delivery": "2026-02-05"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-02T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-03T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DPD"
+      },
+      {
+        "timestamp": "2026-02-03T14:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Hub",
+        "description": "Parcel received at DPD Hub"
+      },
+      {
+        "timestamp": "2026-02-04T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-05T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Manchester",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-05T14:15:00Z",
+        "status": "delivered",
+        "location": "Manchester",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-003",
+    "order_id": "ORD-10003",
+    "tracking_number": "HME1000237572",
+    "status": "delivered",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Charlotte Williams",
+      "email": "charlotte.williams@example.com",
+      "phone": "+447002469134"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "18 Victoria Road",
+      "city": "Birmingham",
+      "postcode": "B1 1BB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "190945CZ",
+        "product_name": "Sparkling Elevated Heart Ring",
+        "quantity": 1,
+        "price": 75
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-03",
+      "shipped": "2026-02-04",
+      "estimated_delivery": "2026-02-07",
+      "actual_delivery": "2026-02-06"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-03T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-04T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-04T14:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-05T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-06T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Birmingham",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-06T14:15:00Z",
+        "status": "delivered",
+        "location": "Birmingham",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-004",
+    "order_id": "ORD-10004",
+    "tracking_number": "DHL1000316763",
+    "status": "delivered",
+    "carrier": "DHL",
+    "customer": {
+      "name": "James Taylor",
+      "email": "james.taylor@example.com",
+      "phone": "+447003703701"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "25 King Street",
+      "city": "Edinburgh",
+      "postcode": "EH1 1YZ",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "399259C02",
+        "product_name": "Game of Thrones Dragon Dangle Charm",
+        "quantity": 1,
+        "price": 35
+      },
+      {
+        "product_id": "196313",
+        "product_name": "Band of Hearts Ring",
+        "quantity": 1,
+        "price": 40
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-04",
+      "shipped": "2026-02-05",
+      "estimated_delivery": "2026-02-08",
+      "actual_delivery": "2026-02-07"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-04T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-05T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-05T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-06T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-07T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Edinburgh",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-07T14:15:00Z",
+        "status": "delivered",
+        "location": "Edinburgh",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-005",
+    "order_id": "ORD-10005",
+    "tracking_number": "FDX010003959504",
+    "status": "delivered",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Sophia Brown",
+      "email": "sophia.brown@example.com",
+      "phone": "+447004938268"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "32 Queen's Avenue",
+      "city": "Cardiff",
+      "postcode": "CF10 1EP",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "798907C01",
+        "product_name": "Disney Pixar Toy Story Alien Charm",
+        "quantity": 1,
+        "price": 35
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-05",
+      "shipped": "2026-02-06",
+      "estimated_delivery": "2026-02-09",
+      "actual_delivery": "2026-02-08"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-05T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-06T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-06T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-07T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-08T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Cardiff",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-08T14:15:00Z",
+        "status": "delivered",
+        "location": "Cardiff",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-006",
+    "order_id": "ORD-10006",
+    "tracking_number": "RM100047514GB",
+    "status": "delivered",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "William Davies",
+      "email": "william.davies@example.com",
+      "phone": "+447006172835"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "39 Park Road",
+      "city": "Bristol",
+      "postcode": "BS1 1HT",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "192316C01",
+        "product_name": "Sparkling Pavé Tennis Bracelet",
+        "quantity": 1,
+        "price": 120
+      },
+      {
+        "product_id": "150100",
+        "product_name": "Round Sparkle Halo Ring",
+        "quantity": 1,
+        "price": 80
+      },
+      {
+        "product_id": "399259C02",
+        "product_name": "Game of Thrones Dragon Dangle Charm",
+        "quantity": 1,
+        "price": 35
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-06",
+      "shipped": "2026-02-07",
+      "estimated_delivery": "2026-02-10",
+      "actual_delivery": "2026-02-09"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-06T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-07T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-07T14:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      },
+      {
+        "timestamp": "2026-02-08T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-09T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Bristol",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-09T14:15:00Z",
+        "status": "delivered",
+        "location": "Bristol",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-007",
+    "order_id": "ORD-10007",
+    "tracking_number": "DPD1000554331",
+    "status": "delivered",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Amelia Wilson",
+      "email": "amelia.wilson@example.com",
+      "phone": "+447007407402"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "46 Station Road",
+      "city": "Leeds",
+      "postcode": "LS1 1UR",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "188421",
+        "product_name": "Pandora Reflexions Mesh Bracelet",
+        "quantity": 1,
+        "price": 50
+      },
+      {
+        "product_id": "180188",
+        "product_name": "Pandora Moments Heart Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 60
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-07",
+      "shipped": "2026-02-08",
+      "estimated_delivery": "2026-02-11",
+      "actual_delivery": "2026-02-10"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-07T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-08T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DPD"
+      },
+      {
+        "timestamp": "2026-02-08T14:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Hub",
+        "description": "Parcel received at DPD Hub"
+      },
+      {
+        "timestamp": "2026-02-09T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-10T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Leeds",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-10T14:15:00Z",
+        "status": "delivered",
+        "location": "Leeds",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-008",
+    "order_id": "ORD-10008",
+    "tracking_number": "HME1000633522",
+    "status": "delivered",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Harry Evans",
+      "email": "harry.evans@example.com",
+      "phone": "+447008641969"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "53 London Road",
+      "city": "Glasgow",
+      "postcode": "G1 1DN",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "149591C00",
+        "product_name": "Pandora Moments Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 65
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-08",
+      "shipped": "2026-02-09",
+      "estimated_delivery": "2026-02-12",
+      "actual_delivery": "2026-02-11"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-08T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-09T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-09T14:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-10T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-11T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Glasgow",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-11T14:15:00Z",
+        "status": "delivered",
+        "location": "Glasgow",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-009",
+    "order_id": "ORD-10009",
+    "tracking_number": "DHL1000712713",
+    "status": "delivered",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Isabella Thomas",
+      "email": "isabella.thomas@example.com",
+      "phone": "+447009876536"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "60 Mill Lane",
+      "city": "Liverpool",
+      "postcode": "L1 1JD",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "169398C01",
+        "product_name": "Sparkling Wishbone Heart Ring",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-09",
+      "shipped": "2026-02-10",
+      "estimated_delivery": "2026-02-13",
+      "actual_delivery": "2026-02-12"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-09T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-10T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-10T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-11T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-12T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Liverpool",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-12T14:15:00Z",
+        "status": "delivered",
+        "location": "Liverpool",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-010",
+    "order_id": "ORD-10010",
+    "tracking_number": "FDX010007919004",
+    "status": "delivered",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "George Johnson",
+      "email": "george.johnson@example.com",
+      "phone": "+447011111103"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "67 The Crescent",
+      "city": "Nottingham",
+      "postcode": "NG1 1AB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "192830C01",
+        "product_name": "Celestial Sparkling Star Stud Earrings",
+        "quantity": 1,
+        "price": 40
+      },
+      {
+        "product_id": "590528",
+        "product_name": "Pandora Moments Barrel Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-10",
+      "shipped": "2026-02-11",
+      "estimated_delivery": "2026-02-14",
+      "actual_delivery": "2026-02-13"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-10T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-11T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-11T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-12T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-13T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Nottingham",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-13T14:15:00Z",
+        "status": "delivered",
+        "location": "Nottingham",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-011",
+    "order_id": "ORD-10011",
+    "tracking_number": "RM100087109GB",
+    "status": "delivered",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Mia Roberts",
+      "email": "mia.roberts@example.com",
+      "phone": "+447012345670"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "74 Elm Street",
+      "city": "Sheffield",
+      "postcode": "S1 1WB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "599505C01",
+        "product_name": "Sparkling Infinity Stud Earrings",
+        "quantity": 1,
+        "price": 45
+      },
+      {
+        "product_id": "168290C01",
+        "product_name": "Sparkling Daisy Flower Trio Ring",
+        "quantity": 1,
+        "price": 60
+      },
+      {
+        "product_id": "169398C01",
+        "product_name": "Sparkling Wishbone Heart Ring",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-11",
+      "shipped": "2026-02-12",
+      "estimated_delivery": "2026-02-15",
+      "actual_delivery": "2026-02-14"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-11T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-12T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-12T14:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      },
+      {
+        "timestamp": "2026-02-13T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-14T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Sheffield",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-14T14:15:00Z",
+        "status": "delivered",
+        "location": "Sheffield",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": true
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-012",
+    "order_id": "ORD-10012",
+    "tracking_number": "DPD1000950281",
+    "status": "delivered",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Thomas Walker",
+      "email": "thomas.walker@example.com",
+      "phone": "+447013580237"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "81 Oak Drive",
+      "city": "Newcastle",
+      "postcode": "NE1 4ST",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "580702",
+        "product_name": "Pandora ME Link Chain Bracelet",
+        "quantity": 1,
+        "price": 95
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-12",
+      "shipped": "2026-02-13",
+      "estimated_delivery": "2026-02-16",
+      "actual_delivery": "2026-02-15"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-12T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-13T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DPD"
+      },
+      {
+        "timestamp": "2026-02-13T14:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Hub",
+        "description": "Parcel received at DPD Hub"
+      },
+      {
+        "timestamp": "2026-02-14T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-15T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Newcastle",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-15T14:15:00Z",
+        "status": "delivered",
+        "location": "Newcastle",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-013",
+    "order_id": "ORD-10013",
+    "tracking_number": "HME1001029472",
+    "status": "delivered",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Lily Wright",
+      "email": "lily.wright@example.com",
+      "phone": "+447014814804"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "88 Maple Close",
+      "city": "Brighton",
+      "postcode": "BN1 1AE",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "196313",
+        "product_name": "Band of Hearts Ring",
+        "quantity": 1,
+        "price": 40
+      },
+      {
+        "product_id": "163291C01",
+        "product_name": "Blue Pansy Flower Pendant Necklace",
+        "quantity": 1,
+        "price": 70
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-13",
+      "shipped": "2026-02-14",
+      "estimated_delivery": "2026-02-17",
+      "actual_delivery": "2026-02-16"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-13T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-14T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-14T14:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-15T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-16T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Brighton",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-16T14:15:00Z",
+        "status": "delivered",
+        "location": "Brighton",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-014",
+    "order_id": "ORD-10014",
+    "tracking_number": "DHL1001108663",
+    "status": "delivered",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Jack Robinson",
+      "email": "jack.robinson@example.com",
+      "phone": "+447016049371"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "95 Cedar Way",
+      "city": "Oxford",
+      "postcode": "OX1 1BX",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "792691C01",
+        "product_name": "Galaxy Sparkling Star Charm",
+        "quantity": 1,
+        "price": 45
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-14",
+      "shipped": "2026-02-15",
+      "estimated_delivery": "2026-02-18",
+      "actual_delivery": "2026-02-17"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-14T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-15T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-15T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-16T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-17T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Oxford",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-17T14:15:00Z",
+        "status": "delivered",
+        "location": "Oxford",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-015",
+    "order_id": "ORD-10015",
+    "tracking_number": "FDX010011878504",
+    "status": "delivered",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Ava Thompson",
+      "email": "ava.thompson@example.com",
+      "phone": "+447017283938"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "102 Birch Lane",
+      "city": "Cambridge",
+      "postcode": "CB1 1JW",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "150100",
+        "product_name": "Round Sparkle Halo Ring",
+        "quantity": 1,
+        "price": 80
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-15",
+      "shipped": "2026-02-16",
+      "estimated_delivery": "2026-02-19",
+      "actual_delivery": "2026-02-18"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-15T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-16T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-16T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-17T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-18T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Cambridge",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-18T14:15:00Z",
+        "status": "delivered",
+        "location": "Cambridge",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-016",
+    "order_id": "ORD-10016",
+    "tracking_number": "RM100126704GB",
+    "status": "delivered",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Daniel White",
+      "email": "daniel.white@example.com",
+      "phone": "+447018518505"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "109 Rose Gardens",
+      "city": "Bath",
+      "postcode": "BA1 1SU",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "180188",
+        "product_name": "Pandora Moments Heart Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 60
+      },
+      {
+        "product_id": "798907C01",
+        "product_name": "Disney Pixar Toy Story Alien Charm",
+        "quantity": 1,
+        "price": 35
+      },
+      {
+        "product_id": "792691C01",
+        "product_name": "Galaxy Sparkling Star Charm",
+        "quantity": 1,
+        "price": 45
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-16",
+      "shipped": "2026-02-17",
+      "estimated_delivery": "2026-02-20",
+      "actual_delivery": "2026-02-19"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-16T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-17T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-17T14:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      },
+      {
+        "timestamp": "2026-02-18T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-19T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Bath",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-19T14:15:00Z",
+        "status": "delivered",
+        "location": "Bath",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-017",
+    "order_id": "ORD-10017",
+    "tracking_number": "DPD1001346231",
+    "status": "delivered",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Grace Hughes",
+      "email": "grace.hughes@example.com",
+      "phone": "+447019753072"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "116 Meadow Way",
+      "city": "York",
+      "postcode": "YO1 7HH",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "199456C01",
+        "product_name": "Blue Butterfly Sparkling Pendant Necklace",
+        "quantity": 1,
+        "price": 90
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-17",
+      "shipped": "2026-02-18",
+      "estimated_delivery": "2026-02-21",
+      "actual_delivery": "2026-02-20"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-17T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-18T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DPD"
+      },
+      {
+        "timestamp": "2026-02-18T14:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Hub",
+        "description": "Parcel received at DPD Hub"
+      },
+      {
+        "timestamp": "2026-02-19T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-20T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "York",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-20T14:15:00Z",
+        "status": "delivered",
+        "location": "York",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-018",
+    "order_id": "ORD-10018",
+    "tracking_number": "HME1001425422",
+    "status": "delivered",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Alexander Edwards",
+      "email": "alexander.edwards@example.com",
+      "phone": "+447020987639"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "3 Riverside Drive",
+      "city": "Southampton",
+      "postcode": "SO14 0BB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "793015C01",
+        "product_name": "Blue Globe Clip Charm",
+        "quantity": 1,
+        "price": 30
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-18",
+      "shipped": "2026-02-19",
+      "estimated_delivery": "2026-02-22",
+      "actual_delivery": "2026-02-21"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-18T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-19T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-19T14:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-20T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-21T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Southampton",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-21T14:15:00Z",
+        "status": "delivered",
+        "location": "Southampton",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-019",
+    "order_id": "ORD-10019",
+    "tracking_number": "DHL1001504613",
+    "status": "delivered",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Freya Green",
+      "email": "freya.green@example.com",
+      "phone": "+447022222206"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "10 Castle Street",
+      "city": "Plymouth",
+      "postcode": "PL1 1EA",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "590528",
+        "product_name": "Pandora Moments Barrel Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 55
+      },
+      {
+        "product_id": "149591C00",
+        "product_name": "Pandora Moments Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 65
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-19",
+      "shipped": "2026-02-20",
+      "estimated_delivery": "2026-02-23",
+      "actual_delivery": "2026-02-22"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-19T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-20T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-20T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-21T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-22T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Plymouth",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-22T14:15:00Z",
+        "status": "delivered",
+        "location": "Plymouth",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-020",
+    "order_id": "ORD-10020",
+    "tracking_number": "FDX010015838004",
+    "status": "delivered",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Henry Hall",
+      "email": "henry.hall@example.com",
+      "phone": "+447023456773"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "17 Bridge Road",
+      "city": "Exeter",
+      "postcode": "EX1 1JJ",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "168290C01",
+        "product_name": "Sparkling Daisy Flower Trio Ring",
+        "quantity": 1,
+        "price": 60
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-20",
+      "shipped": "2026-02-21",
+      "estimated_delivery": "2026-02-24",
+      "actual_delivery": "2026-02-23"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-20T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-21T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-21T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-22T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-23T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Exeter",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-23T14:15:00Z",
+        "status": "delivered",
+        "location": "Exeter",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-021",
+    "order_id": "ORD-10021",
+    "tracking_number": "RM100166299GB",
+    "status": "delivered",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Ella Clarke",
+      "email": "ella.clarke@example.com",
+      "phone": "+447024691340"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "24 High Street",
+      "city": "London",
+      "postcode": "SW1A 1AA",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "142784C01",
+        "product_name": "Stars & Stones Ring",
+        "quantity": 1,
+        "price": 45
+      },
+      {
+        "product_id": "192830C01",
+        "product_name": "Celestial Sparkling Star Stud Earrings",
+        "quantity": 1,
+        "price": 40
+      },
+      {
+        "product_id": "590528",
+        "product_name": "Pandora Moments Barrel Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-21",
+      "shipped": "2026-02-22",
+      "estimated_delivery": "2026-02-25",
+      "actual_delivery": "2026-02-24"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-21T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-22T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-22T14:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      },
+      {
+        "timestamp": "2026-02-23T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-24T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "London",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-24T14:15:00Z",
+        "status": "delivered",
+        "location": "London",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": true
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-022",
+    "order_id": "ORD-10022",
+    "tracking_number": "DPD1001742181",
+    "status": "delivered",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Samuel Lewis",
+      "email": "samuel.lewis@example.com",
+      "phone": "+447025925907"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "31 Church Lane",
+      "city": "Manchester",
+      "postcode": "M1 1AE",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "163291C01",
+        "product_name": "Blue Pansy Flower Pendant Necklace",
+        "quantity": 1,
+        "price": 70
+      },
+      {
+        "product_id": "599505C01",
+        "product_name": "Sparkling Infinity Stud Earrings",
+        "quantity": 1,
+        "price": 45
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-22",
+      "shipped": "2026-02-23",
+      "estimated_delivery": "2026-02-26",
+      "actual_delivery": "2026-02-25"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-22T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-23T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DPD"
+      },
+      {
+        "timestamp": "2026-02-23T14:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Hub",
+        "description": "Parcel received at DPD Hub"
+      },
+      {
+        "timestamp": "2026-02-24T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-25T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Manchester",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-25T14:15:00Z",
+        "status": "delivered",
+        "location": "Manchester",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-023",
+    "order_id": "ORD-10023",
+    "tracking_number": "HME1001821372",
+    "status": "delivered",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Poppy Wood",
+      "email": "poppy.wood@example.com",
+      "phone": "+447027160474"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "38 Victoria Road",
+      "city": "Birmingham",
+      "postcode": "B1 1BB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "190945CZ",
+        "product_name": "Sparkling Elevated Heart Ring",
+        "quantity": 1,
+        "price": 75
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-23",
+      "shipped": "2026-02-24",
+      "estimated_delivery": "2026-02-27",
+      "actual_delivery": "2026-02-26"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-23T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-24T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-24T14:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-25T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-26T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Birmingham",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-26T14:15:00Z",
+        "status": "delivered",
+        "location": "Birmingham",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-024",
+    "order_id": "ORD-10024",
+    "tracking_number": "DHL1001900563",
+    "status": "delivered",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Benjamin Harris",
+      "email": "benjamin.harris@example.com",
+      "phone": "+447028395041"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "45 King Street",
+      "city": "Edinburgh",
+      "postcode": "EH1 1YZ",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "399259C02",
+        "product_name": "Game of Thrones Dragon Dangle Charm",
+        "quantity": 1,
+        "price": 35
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-24",
+      "shipped": "2026-02-25",
+      "estimated_delivery": "2026-02-28",
+      "actual_delivery": "2026-02-27"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-24T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-25T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-25T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-26T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-27T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Edinburgh",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-27T14:15:00Z",
+        "status": "delivered",
+        "location": "Edinburgh",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-025",
+    "order_id": "ORD-10025",
+    "tracking_number": "FDX010019797504",
+    "status": "delivered",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Rosie Martin",
+      "email": "rosie.martin@example.com",
+      "phone": "+447029629608"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "52 Queen's Avenue",
+      "city": "Cardiff",
+      "postcode": "CF10 1EP",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "798907C01",
+        "product_name": "Disney Pixar Toy Story Alien Charm",
+        "quantity": 1,
+        "price": 35
+      },
+      {
+        "product_id": "792691C01",
+        "product_name": "Galaxy Sparkling Star Charm",
+        "quantity": 1,
+        "price": 45
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-25",
+      "shipped": "2026-02-26",
+      "estimated_delivery": "2026-02-28",
+      "actual_delivery": "2026-02-28"
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-25T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-26T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-26T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-27T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-28T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Cardiff",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-28T14:15:00Z",
+        "status": "delivered",
+        "location": "Cardiff",
+        "description": "Delivered to recipient"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-026",
+    "order_id": "ORD-10026",
+    "tracking_number": "RM100205894GB",
+    "status": "picked",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Lucas Jackson",
+      "email": "lucas.jackson@example.com",
+      "phone": "+447030864175"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "59 Park Road",
+      "city": "Bristol",
+      "postcode": "BS1 1HT",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "192316C01",
+        "product_name": "Sparkling Pavé Tennis Bracelet",
+        "quantity": 1,
+        "price": 120
+      },
+      {
+        "product_id": "150100",
+        "product_name": "Round Sparkle Halo Ring",
+        "quantity": 1,
+        "price": 80
+      },
+      {
+        "product_id": "399259C02",
+        "product_name": "Game of Thrones Dragon Dangle Charm",
+        "quantity": 1,
+        "price": 35
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-26",
+      "shipped": null,
+      "estimated_delivery": "2026-02-28",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-26T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-27T09:00:00Z",
+        "status": "picked",
+        "location": "Lutterworth DC",
+        "description": "Items picked and packed for dispatch"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-027",
+    "order_id": "ORD-10027",
+    "tracking_number": "DPD1002138131",
+    "status": "in_transit",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Florence Turner",
+      "email": "florence.turner@example.com",
+      "phone": "+447032098742"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "66 Station Road",
+      "city": "Leeds",
+      "postcode": "LS1 1UR",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "188421",
+        "product_name": "Pandora Reflexions Mesh Bracelet",
+        "quantity": 1,
+        "price": 50
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-01",
+      "shipped": "2026-02-02",
+      "estimated_delivery": "2026-02-05",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-01T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-02T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DPD"
+      },
+      {
+        "timestamp": "2026-02-02T14:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Hub",
+        "description": "Parcel received at DPD Hub"
+      },
+      {
+        "timestamp": "2026-02-03T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-028",
+    "order_id": "ORD-10028",
+    "tracking_number": "HME1002217322",
+    "status": "in_transit",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Ethan Phillips",
+      "email": "ethan.phillips@example.com",
+      "phone": "+447033333309"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "73 London Road",
+      "city": "Glasgow",
+      "postcode": "G1 1DN",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "149591C00",
+        "product_name": "Pandora Moments Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 65
+      },
+      {
+        "product_id": "199456C01",
+        "product_name": "Blue Butterfly Sparkling Pendant Necklace",
+        "quantity": 1,
+        "price": 90
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-02",
+      "shipped": "2026-02-03",
+      "estimated_delivery": "2026-02-06",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-02T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-03T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-03T14:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-04T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-029",
+    "order_id": "ORD-10029",
+    "tracking_number": "DHL1002296513",
+    "status": "in_transit",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Willow Baker",
+      "email": "willow.baker@example.com",
+      "phone": "+447034567876"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "80 Mill Lane",
+      "city": "Liverpool",
+      "postcode": "L1 1JD",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "169398C01",
+        "product_name": "Sparkling Wishbone Heart Ring",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-03",
+      "shipped": "2026-02-04",
+      "estimated_delivery": "2026-02-07",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-03T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-04T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-04T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-05T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-030",
+    "order_id": "ORD-10030",
+    "tracking_number": "FDX010023757004",
+    "status": "in_transit",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Noah Mitchell",
+      "email": "noah.mitchell@example.com",
+      "phone": "+447035802443"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "87 The Crescent",
+      "city": "Nottingham",
+      "postcode": "NG1 1AB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "192830C01",
+        "product_name": "Celestial Sparkling Star Stud Earrings",
+        "quantity": 1,
+        "price": 40
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-04",
+      "shipped": "2026-02-05",
+      "estimated_delivery": "2026-02-08",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-04T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-05T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-05T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-06T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-031",
+    "order_id": "ORD-10031",
+    "tracking_number": "RM100245489GB",
+    "status": "in_transit",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Ivy Carter",
+      "email": "ivy.carter@example.com",
+      "phone": "+447037037010"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "94 Elm Street",
+      "city": "Sheffield",
+      "postcode": "S1 1WB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "599505C01",
+        "product_name": "Sparkling Infinity Stud Earrings",
+        "quantity": 1,
+        "price": 45
+      },
+      {
+        "product_id": "168290C01",
+        "product_name": "Sparkling Daisy Flower Trio Ring",
+        "quantity": 1,
+        "price": 60
+      },
+      {
+        "product_id": "169398C01",
+        "product_name": "Sparkling Wishbone Heart Ring",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-05",
+      "shipped": "2026-02-06",
+      "estimated_delivery": "2026-02-09",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-05T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-06T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-06T14:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      },
+      {
+        "timestamp": "2026-02-07T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": true
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-032",
+    "order_id": "ORD-10032",
+    "tracking_number": "DPD1002534081",
+    "status": "in_transit",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Oscar Campbell",
+      "email": "oscar.campbell@example.com",
+      "phone": "+447038271577"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "101 Oak Drive",
+      "city": "Newcastle",
+      "postcode": "NE1 4ST",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "580702",
+        "product_name": "Pandora ME Link Chain Bracelet",
+        "quantity": 1,
+        "price": 95
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-06",
+      "shipped": "2026-02-07",
+      "estimated_delivery": "2026-02-10",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-06T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-07T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DPD"
+      },
+      {
+        "timestamp": "2026-02-07T14:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Hub",
+        "description": "Parcel received at DPD Hub"
+      },
+      {
+        "timestamp": "2026-02-08T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-033",
+    "order_id": "ORD-10033",
+    "tracking_number": "HME1002613272",
+    "status": "in_transit",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Daisy Murray",
+      "email": "daisy.murray@example.com",
+      "phone": "+447039506144"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "108 Maple Close",
+      "city": "Brighton",
+      "postcode": "BN1 1AE",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "196313",
+        "product_name": "Band of Hearts Ring",
+        "quantity": 1,
+        "price": 40
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-07",
+      "shipped": "2026-02-08",
+      "estimated_delivery": "2026-02-11",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-07T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-08T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-08T14:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-09T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-034",
+    "order_id": "ORD-10034",
+    "tracking_number": "DHL1002692463",
+    "status": "in_transit",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Leo Anderson",
+      "email": "leo.anderson@example.com",
+      "phone": "+447040740711"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "115 Cedar Way",
+      "city": "Oxford",
+      "postcode": "OX1 1BX",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "792691C01",
+        "product_name": "Galaxy Sparkling Star Charm",
+        "quantity": 1,
+        "price": 45
+      },
+      {
+        "product_id": "190945CZ",
+        "product_name": "Sparkling Elevated Heart Ring",
+        "quantity": 1,
+        "price": 75
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-08",
+      "shipped": "2026-02-09",
+      "estimated_delivery": "2026-02-12",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-08T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-09T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-09T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-10T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-035",
+    "order_id": "ORD-10035",
+    "tracking_number": "FDX010027716504",
+    "status": "in_transit",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Ruby Scott",
+      "email": "ruby.scott@example.com",
+      "phone": "+447041975278"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "2 Birch Lane",
+      "city": "Cambridge",
+      "postcode": "CB1 1JW",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "150100",
+        "product_name": "Round Sparkle Halo Ring",
+        "quantity": 1,
+        "price": 80
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-09",
+      "shipped": "2026-02-10",
+      "estimated_delivery": "2026-02-13",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-09T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-10T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-10T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-11T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-036",
+    "order_id": "ORD-10036",
+    "tracking_number": "RM100285084GB",
+    "status": "in_transit",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Arthur Stewart",
+      "email": "arthur.stewart@example.com",
+      "phone": "+447043209845"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "9 Rose Gardens",
+      "city": "Bath",
+      "postcode": "BA1 1SU",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "180188",
+        "product_name": "Pandora Moments Heart Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 60
+      },
+      {
+        "product_id": "798907C01",
+        "product_name": "Disney Pixar Toy Story Alien Charm",
+        "quantity": 1,
+        "price": 35
+      },
+      {
+        "product_id": "792691C01",
+        "product_name": "Galaxy Sparkling Star Charm",
+        "quantity": 1,
+        "price": 45
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-10",
+      "shipped": "2026-02-11",
+      "estimated_delivery": "2026-02-14",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-10T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-11T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-11T14:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      },
+      {
+        "timestamp": "2026-02-12T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-037",
+    "order_id": "ORD-10037",
+    "tracking_number": "DPD1002930031",
+    "status": "in_transit",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Olivia Reid",
+      "email": "olivia.reid@example.com",
+      "phone": "+447044444412"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "16 Meadow Way",
+      "city": "York",
+      "postcode": "YO1 7HH",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "199456C01",
+        "product_name": "Blue Butterfly Sparkling Pendant Necklace",
+        "quantity": 1,
+        "price": 90
+      },
+      {
+        "product_id": "192316C01",
+        "product_name": "Sparkling Pavé Tennis Bracelet",
+        "quantity": 1,
+        "price": 120
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-11",
+      "shipped": "2026-02-12",
+      "estimated_delivery": "2026-02-15",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-11T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-12T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DPD"
+      },
+      {
+        "timestamp": "2026-02-12T14:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Hub",
+        "description": "Parcel received at DPD Hub"
+      },
+      {
+        "timestamp": "2026-02-13T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-038",
+    "order_id": "ORD-10038",
+    "tracking_number": "HME1003009222",
+    "status": "in_transit",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Charlie Graham",
+      "email": "charlie.graham@example.com",
+      "phone": "+447045678979"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "23 Riverside Drive",
+      "city": "Southampton",
+      "postcode": "SO14 0BB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "793015C01",
+        "product_name": "Blue Globe Clip Charm",
+        "quantity": 1,
+        "price": 30
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-12",
+      "shipped": "2026-02-13",
+      "estimated_delivery": "2026-02-16",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-12T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-13T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-13T14:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-14T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-039",
+    "order_id": "ORD-10039",
+    "tracking_number": "DHL1003088413",
+    "status": "in_transit",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Emily Watson",
+      "email": "emily.watson@example.com",
+      "phone": "+447046913546"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "30 Castle Street",
+      "city": "Plymouth",
+      "postcode": "PL1 1EA",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "590528",
+        "product_name": "Pandora Moments Barrel Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-13",
+      "shipped": "2026-02-14",
+      "estimated_delivery": "2026-02-17",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-13T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-14T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-14T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-15T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-040",
+    "order_id": "ORD-10040",
+    "tracking_number": "FDX010031676004",
+    "status": "in_transit",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Freddie Morrison",
+      "email": "freddie.morrison@example.com",
+      "phone": "+447048148113"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "37 Bridge Road",
+      "city": "Exeter",
+      "postcode": "EX1 1JJ",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "168290C01",
+        "product_name": "Sparkling Daisy Flower Trio Ring",
+        "quantity": 1,
+        "price": 60
+      },
+      {
+        "product_id": "169398C01",
+        "product_name": "Sparkling Wishbone Heart Ring",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-14",
+      "shipped": "2026-02-15",
+      "estimated_delivery": "2026-02-18",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-14T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-15T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-15T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-16T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-041",
+    "order_id": "ORD-10041",
+    "tracking_number": "RM100324679GB",
+    "status": "out_for_delivery",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Chloe Smith",
+      "email": "chloe.smith@example.com",
+      "phone": "+447049382680"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "44 High Street",
+      "city": "London",
+      "postcode": "SW1A 1AA",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "142784C01",
+        "product_name": "Stars & Stones Ring",
+        "quantity": 1,
+        "price": 45
+      },
+      {
+        "product_id": "192830C01",
+        "product_name": "Celestial Sparkling Star Stud Earrings",
+        "quantity": 1,
+        "price": 40
+      },
+      {
+        "product_id": "590528",
+        "product_name": "Pandora Moments Barrel Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-15",
+      "shipped": "2026-02-16",
+      "estimated_delivery": "2026-02-19",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-15T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-16T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-16T14:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      },
+      {
+        "timestamp": "2026-02-17T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-18T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "London",
+        "description": "Parcel out for delivery"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": true
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-042",
+    "order_id": "ORD-10042",
+    "tracking_number": "DPD1003325981",
+    "status": "out_for_delivery",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Archie Jones",
+      "email": "archie.jones@example.com",
+      "phone": "+447050617247"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "51 Church Lane",
+      "city": "Manchester",
+      "postcode": "M1 1AE",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "163291C01",
+        "product_name": "Blue Pansy Flower Pendant Necklace",
+        "quantity": 1,
+        "price": 70
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-16",
+      "shipped": "2026-02-17",
+      "estimated_delivery": "2026-02-20",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-16T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-17T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DPD"
+      },
+      {
+        "timestamp": "2026-02-17T14:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Hub",
+        "description": "Parcel received at DPD Hub"
+      },
+      {
+        "timestamp": "2026-02-18T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-19T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Manchester",
+        "description": "Parcel out for delivery"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-043",
+    "order_id": "ORD-10043",
+    "tracking_number": "HME1003405172",
+    "status": "out_for_delivery",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Jessica Williams",
+      "email": "jessica.williams@example.com",
+      "phone": "+447051851814"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "58 Victoria Road",
+      "city": "Birmingham",
+      "postcode": "B1 1BB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "190945CZ",
+        "product_name": "Sparkling Elevated Heart Ring",
+        "quantity": 1,
+        "price": 75
+      },
+      {
+        "product_id": "580702",
+        "product_name": "Pandora ME Link Chain Bracelet",
+        "quantity": 1,
+        "price": 95
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-17",
+      "shipped": "2026-02-18",
+      "estimated_delivery": "2026-02-21",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-17T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-18T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-18T14:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-19T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-20T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Birmingham",
+        "description": "Parcel out for delivery"
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-044",
+    "order_id": "ORD-10044",
+    "tracking_number": "DHL1003484363",
+    "status": "out_for_delivery",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Edward Taylor",
+      "email": "edward.taylor@example.com",
+      "phone": "+447053086381"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "65 King Street",
+      "city": "Edinburgh",
+      "postcode": "EH1 1YZ",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "399259C02",
+        "product_name": "Game of Thrones Dragon Dangle Charm",
+        "quantity": 1,
+        "price": 35
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-18",
+      "shipped": "2026-02-19",
+      "estimated_delivery": "2026-02-22",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-18T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-19T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-19T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-20T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-21T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Edinburgh",
+        "description": "Parcel out for delivery"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-045",
+    "order_id": "ORD-10045",
+    "tracking_number": "FDX010035635504",
+    "status": "out_for_delivery",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Hannah Brown",
+      "email": "hannah.brown@example.com",
+      "phone": "+447054320948"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "72 Queen's Avenue",
+      "city": "Cardiff",
+      "postcode": "CF10 1EP",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "798907C01",
+        "product_name": "Disney Pixar Toy Story Alien Charm",
+        "quantity": 1,
+        "price": 35
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-19",
+      "shipped": "2026-02-20",
+      "estimated_delivery": "2026-02-23",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-19T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-20T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-20T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-21T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-22T07:30:00Z",
+        "status": "out_for_delivery",
+        "location": "Cardiff",
+        "description": "Parcel out for delivery"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-046",
+    "order_id": "ORD-10046",
+    "tracking_number": "RM100364274GB",
+    "status": "dispatched",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Sebastian Davies",
+      "email": "sebastian.davies@example.com",
+      "phone": "+447055555515"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "79 Park Road",
+      "city": "Bristol",
+      "postcode": "BS1 1HT",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "192316C01",
+        "product_name": "Sparkling Pavé Tennis Bracelet",
+        "quantity": 1,
+        "price": 120
+      },
+      {
+        "product_id": "150100",
+        "product_name": "Round Sparkle Halo Ring",
+        "quantity": 1,
+        "price": 80
+      },
+      {
+        "product_id": "399259C02",
+        "product_name": "Game of Thrones Dragon Dangle Charm",
+        "quantity": 1,
+        "price": 35
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-20",
+      "shipped": "2026-02-21",
+      "estimated_delivery": "2026-02-24",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-20T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-21T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-21T14:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-047",
+    "order_id": "ORD-10047",
+    "tracking_number": "DPD1003721931",
+    "status": "dispatched",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Phoebe Wilson",
+      "email": "phoebe.wilson@example.com",
+      "phone": "+447056790082"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "86 Station Road",
+      "city": "Leeds",
+      "postcode": "LS1 1UR",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "188421",
+        "product_name": "Pandora Reflexions Mesh Bracelet",
+        "quantity": 1,
+        "price": 50
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-21",
+      "shipped": "2026-02-22",
+      "estimated_delivery": "2026-02-25",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-21T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-22T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DPD"
+      },
+      {
+        "timestamp": "2026-02-22T14:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Hub",
+        "description": "Parcel received at DPD Hub"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-048",
+    "order_id": "ORD-10048",
+    "tracking_number": "HME1003801122",
+    "status": "dispatched",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Isaac Evans",
+      "email": "isaac.evans@example.com",
+      "phone": "+447058024649"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "93 London Road",
+      "city": "Glasgow",
+      "postcode": "G1 1DN",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "149591C00",
+        "product_name": "Pandora Moments Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 65
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-22",
+      "shipped": "2026-02-23",
+      "estimated_delivery": "2026-02-26",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-22T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-23T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-23T14:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-049",
+    "order_id": "ORD-10049",
+    "tracking_number": "DHL1003880313",
+    "status": "dispatched",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Millie Thomas",
+      "email": "millie.thomas@example.com",
+      "phone": "+447059259216"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "100 Mill Lane",
+      "city": "Liverpool",
+      "postcode": "L1 1JD",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "169398C01",
+        "product_name": "Sparkling Wishbone Heart Ring",
+        "quantity": 1,
+        "price": 55
+      },
+      {
+        "product_id": "793015C01",
+        "product_name": "Blue Globe Clip Charm",
+        "quantity": 1,
+        "price": 30
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-23",
+      "shipped": "2026-02-24",
+      "estimated_delivery": "2026-02-27",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-23T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-24T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-24T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-050",
+    "order_id": "ORD-10050",
+    "tracking_number": "FDX010039595004",
+    "status": "dispatched",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Max Johnson",
+      "email": "max.johnson@example.com",
+      "phone": "+447060493783"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "107 The Crescent",
+      "city": "Nottingham",
+      "postcode": "NG1 1AB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "192830C01",
+        "product_name": "Celestial Sparkling Star Stud Earrings",
+        "quantity": 1,
+        "price": 40
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-24",
+      "shipped": "2026-02-25",
+      "estimated_delivery": "2026-02-28",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-24T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-25T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-25T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-051",
+    "order_id": "ORD-10051",
+    "tracking_number": "RM496355769GB",
+    "status": "delayed",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Eleanor Whitfield",
+      "email": "eleanor.whitfield@example.com",
+      "phone": "+447891234501"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "42 Northgate Lane",
+      "city": "Newcastle",
+      "postcode": "NE1 4ST",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "192316C01",
+        "product_name": "Sparkling Pavé Tennis Bracelet",
+        "quantity": 1,
+        "price": 120
+      },
+      {
+        "product_id": "199456C01",
+        "product_name": "Blue Butterfly Sparkling Pendant Necklace",
+        "quantity": 1,
+        "price": 90
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-17",
+      "shipped": "2026-02-18",
+      "estimated_delivery": "2026-02-20",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-17T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-18T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-18T15:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      },
+      {
+        "timestamp": "2026-02-19T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to Newcastle depot"
+      },
+      {
+        "timestamp": "2026-02-20T07:00:00Z",
+        "status": "delayed",
+        "location": "Newcastle Depot",
+        "description": "Delivery delayed - severe weather warning in effect"
+      },
+      {
+        "timestamp": "2026-02-22T11:30:00Z",
+        "status": "delayed",
+        "location": "Newcastle Depot",
+        "description": "Storm Éowyn - continued disruption to deliveries across Northern England. Parcel held at depot."
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": "Severe weather disruption - Storm Éowyn affecting deliveries across Northern England"
+  },
+  {
+    "shipment_id": "SHP-052",
+    "order_id": "ORD-10052",
+    "tracking_number": "DPD1008823412",
+    "status": "delayed",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Marcus Chen-Williams",
+      "email": "marcus.chenwilliams@example.com",
+      "phone": "+447891234502"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "88 Valentines Crescent",
+      "city": "Birmingham",
+      "postcode": "B1 1BB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "190945CZ",
+        "product_name": "Sparkling Elevated Heart Ring",
+        "quantity": 1,
+        "price": 75
+      },
+      {
+        "product_id": "599505C01",
+        "product_name": "Sparkling Infinity Stud Earrings",
+        "quantity": 1,
+        "price": 45
+      },
+      {
+        "product_id": "169398C01",
+        "product_name": "Sparkling Wishbone Heart Ring",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-12",
+      "shipped": "2026-02-13",
+      "estimated_delivery": "2026-02-15",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-12T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-13T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DPD"
+      },
+      {
+        "timestamp": "2026-02-13T16:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Hub",
+        "description": "Parcel received at DPD Hub"
+      },
+      {
+        "timestamp": "2026-02-14T09:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Regional Sort",
+        "description": "Parcel in transit - experiencing high volumes"
+      },
+      {
+        "timestamp": "2026-02-15T08:00:00Z",
+        "status": "delayed",
+        "location": "DPD Birmingham Depot",
+        "description": "Delivery delayed - Valentine's Day surge causing backlog at depot"
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": "Carrier experiencing high volume backlog due to Valentine's Day surge"
+  },
+  {
+    "shipment_id": "SHP-053",
+    "order_id": "ORD-10053",
+    "tracking_number": "HME1009615632",
+    "status": "in_transit",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Sarah Patel",
+      "email": "sarah.patel@example.com",
+      "phone": "+447891234503"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "15 Rosewood Avenue",
+      "city": "Leeds",
+      "postcode": "LS1 1UR",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "163291C01",
+        "product_name": "Blue Pansy Flower Pendant Necklace",
+        "quantity": 1,
+        "price": 70
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-20",
+      "shipped": "2026-02-21",
+      "estimated_delivery": "2026-02-25",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-20T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-21T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-21T17:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-22T08:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-24T10:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Leeds Depot",
+        "description": "In transit - local depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-054",
+    "order_id": "ORD-10054",
+    "tracking_number": "DHL1010407853",
+    "status": "exception",
+    "carrier": "DHL",
+    "customer": {
+      "name": "David McAllister",
+      "email": "david.mcallister@example.com",
+      "phone": "+447891234504"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "7 Harbour View",
+      "city": "Edinburgh",
+      "postcode": "EH1 1YZ",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "580702",
+        "product_name": "Pandora ME Link Chain Bracelet",
+        "quantity": 1,
+        "price": 95
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-22",
+      "shipped": "2026-02-23",
+      "estimated_delivery": "2026-02-26",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-22T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-23T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-23T16:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-24T08:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Edinburgh Depot",
+        "description": "Parcel arrived at local depot"
+      },
+      {
+        "timestamp": "2026-02-25T10:00:00Z",
+        "status": "out_for_delivery",
+        "location": "Edinburgh",
+        "description": "Parcel out for delivery"
+      },
+      {
+        "timestamp": "2026-02-25T14:30:00Z",
+        "status": "exception",
+        "location": "Edinburgh",
+        "description": "Delivery attempted - incorrect postcode on parcel. Unable to locate address. Customer contact required."
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": true
+    },
+    "delay_reason": "Delivery attempted - incorrect postcode. Customer contact required."
+  },
+  {
+    "shipment_id": "SHP-055",
+    "order_id": "ORD-10055",
+    "tracking_number": "FDX100120000004",
+    "status": "exception",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Priya Sharma",
+      "email": "priya.sharma@example.com",
+      "phone": "+447891234505"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "23 Kensington Gardens",
+      "city": "London",
+      "postcode": "SW7 4QU",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "192316C01",
+        "product_name": "Sparkling Pavé Tennis Bracelet",
+        "quantity": 1,
+        "price": 120
+      },
+      {
+        "product_id": "150100",
+        "product_name": "Round Sparkle Halo Ring",
+        "quantity": 1,
+        "price": 80
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-18",
+      "shipped": "2026-02-19",
+      "estimated_delivery": "2026-02-22",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-18T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-19T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-19T17:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-21T06:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Regional Hub",
+        "description": "Parcel scanned at regional hub"
+      },
+      {
+        "timestamp": "2026-02-21T14:00:00Z",
+        "status": "exception",
+        "location": "FedEx Regional Hub",
+        "description": "Parcel not located at expected facility - loss investigation initiated"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": true
+    },
+    "delay_reason": "Parcel not scanned for 6 days - loss investigation initiated"
+  },
+  {
+    "shipment_id": "SHP-056",
+    "order_id": "ORD-10056",
+    "tracking_number": "RM550172369GB",
+    "status": "delayed",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Rebecca Foster",
+      "email": "rebecca.foster@example.com",
+      "phone": "+447891234506"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "9 Primrose Hill",
+      "city": "Bristol",
+      "postcode": "BS1 1HT",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "199456C01",
+        "product_name": "Blue Butterfly Sparkling Pendant Necklace",
+        "quantity": 1,
+        "price": 90
+      },
+      {
+        "product_id": "192830C01",
+        "product_name": "Celestial Sparkling Star Stud Earrings",
+        "quantity": 1,
+        "price": 40
+      },
+      {
+        "product_id": "793015C01",
+        "product_name": "Blue Globe Clip Charm",
+        "quantity": 1,
+        "price": 30
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-23",
+      "shipped": "2026-02-24",
+      "estimated_delivery": "2026-02-27",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-23T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-24T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-24T16:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      },
+      {
+        "timestamp": "2026-02-25T08:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Regional Hub",
+        "description": "Parcel in transit"
+      },
+      {
+        "timestamp": "2026-02-27T09:00:00Z",
+        "status": "delayed",
+        "location": "Royal Mail Bristol Depot",
+        "description": "Delivery delayed - operational issue at local depot. Estimated new delivery: March 2"
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": "Transit delay - estimated delivery will miss recipient birthday (March 1)"
+  },
+  {
+    "shipment_id": "SHP-057",
+    "order_id": "ORD-10057",
+    "tracking_number": "DHL1012991293",
+    "status": "delayed",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Niamh O'Sullivan",
+      "email": "niamh.osullivan@example.com",
+      "phone": "+447891234507"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "34 Grafton Court",
+      "city": "Dublin",
+      "postcode": "D02 VR66",
+      "country": "Ireland"
+    },
+    "items": [
+      {
+        "product_id": "180188",
+        "product_name": "Pandora Moments Heart Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 60
+      },
+      {
+        "product_id": "168290C01",
+        "product_name": "Sparkling Daisy Flower Trio Ring",
+        "quantity": 1,
+        "price": 60
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-19",
+      "shipped": "2026-02-20",
+      "estimated_delivery": "2026-02-24",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-19T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-20T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-20T18:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-21T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL International Gateway",
+        "description": "Parcel departed UK - in transit to Ireland"
+      },
+      {
+        "timestamp": "2026-02-22T09:00:00Z",
+        "status": "delayed",
+        "location": "Dublin Customs",
+        "description": "Parcel held at customs - additional documentation required"
+      },
+      {
+        "timestamp": "2026-02-24T10:00:00Z",
+        "status": "delayed",
+        "location": "Dublin Customs",
+        "description": "Customs clearance pending - awaiting commercial invoice verification"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": true
+    },
+    "delay_reason": "Held at customs - additional documentation required for international shipment"
+  },
+  {
+    "shipment_id": "SHP-058",
+    "order_id": "ORD-10058",
+    "tracking_number": "HME1013783512",
+    "status": "exception",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Gemma Richardson",
+      "email": "gemma.richardson@example.com",
+      "phone": "+447891234508"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "61 Orchard Close",
+      "city": "Manchester",
+      "postcode": "M1 1AE",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "798907C01",
+        "product_name": "Disney Pixar Toy Story Alien Charm",
+        "quantity": 1,
+        "price": 35
+      },
+      {
+        "product_id": "149591C00",
+        "product_name": "Pandora Moments Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 65
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-21",
+      "shipped": "2026-02-22",
+      "estimated_delivery": "2026-02-25",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-21T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-22T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-22T17:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-23T06:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Regional Sort",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-23T14:00:00Z",
+        "status": "exception",
+        "location": "Evri Manchester Depot",
+        "description": "Package reported damaged during sorting - inspection pending. Customer will be contacted."
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": "Package reported damaged during sorting - inspection pending"
+  },
+  {
+    "shipment_id": "SHP-059",
+    "order_id": "ORD-10059",
+    "tracking_number": "DHL1004672213",
+    "status": "ordered",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Isabella Green",
+      "email": "isabella.green@example.com",
+      "phone": "+447071604886"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "50 Castle Street",
+      "city": "Plymouth",
+      "postcode": "PL1 1EA",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "590528",
+        "product_name": "Pandora Moments Barrel Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-07",
+      "shipped": null,
+      "estimated_delivery": "2026-02-11",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-07T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-060",
+    "order_id": "ORD-10060",
+    "tracking_number": "FDX010047514004",
+    "status": "ordered",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "George Hall",
+      "email": "george.hall@example.com",
+      "phone": "+447072839453"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "57 Bridge Road",
+      "city": "Exeter",
+      "postcode": "EX1 1JJ",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "168290C01",
+        "product_name": "Sparkling Daisy Flower Trio Ring",
+        "quantity": 1,
+        "price": 60
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-08",
+      "shipped": null,
+      "estimated_delivery": "2026-02-12",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-08T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-061",
+    "order_id": "ORD-10061",
+    "tracking_number": "RM100483059GB",
+    "status": "ordered",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Mia Clarke",
+      "email": "mia.clarke@example.com",
+      "phone": "+447074074020"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "64 High Street",
+      "city": "London",
+      "postcode": "SW1A 1AA",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "142784C01",
+        "product_name": "Stars & Stones Ring",
+        "quantity": 1,
+        "price": 45
+      },
+      {
+        "product_id": "192830C01",
+        "product_name": "Celestial Sparkling Star Stud Earrings",
+        "quantity": 1,
+        "price": 40
+      },
+      {
+        "product_id": "590528",
+        "product_name": "Pandora Moments Barrel Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-09",
+      "shipped": null,
+      "estimated_delivery": "2026-02-13",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-09T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": true
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-062",
+    "order_id": "ORD-10062",
+    "tracking_number": "DPD1004909781",
+    "status": "picked",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Thomas Lewis",
+      "email": "thomas.lewis@example.com",
+      "phone": "+447075308587"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "71 Church Lane",
+      "city": "Manchester",
+      "postcode": "M1 1AE",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "163291C01",
+        "product_name": "Blue Pansy Flower Pendant Necklace",
+        "quantity": 1,
+        "price": 70
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-10",
+      "shipped": null,
+      "estimated_delivery": "2026-02-14",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-10T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-11T09:00:00Z",
+        "status": "picked",
+        "location": "Lutterworth DC",
+        "description": "Items picked and packed for dispatch"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-063",
+    "order_id": "ORD-10063",
+    "tracking_number": "HME1004988972",
+    "status": "delayed",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Lily Wood",
+      "email": "lily.wood@example.com",
+      "phone": "+447076543154"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "78 Victoria Road",
+      "city": "Birmingham",
+      "postcode": "B1 1BB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "190945CZ",
+        "product_name": "Sparkling Elevated Heart Ring",
+        "quantity": 1,
+        "price": 75
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-11",
+      "shipped": "2026-02-12",
+      "estimated_delivery": "2026-02-15",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-11T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-12T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-12T14:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-13T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-14T10:00:00Z",
+        "status": "delayed",
+        "location": "Regional Hub",
+        "description": "Delivery delayed - parcel held at depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-064",
+    "order_id": "ORD-10064",
+    "tracking_number": "DHL1005068163",
+    "status": "delayed",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Jack Harris",
+      "email": "jack.harris@example.com",
+      "phone": "+447077777721"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "85 King Street",
+      "city": "Edinburgh",
+      "postcode": "EH1 1YZ",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "399259C02",
+        "product_name": "Game of Thrones Dragon Dangle Charm",
+        "quantity": 1,
+        "price": 35
+      },
+      {
+        "product_id": "196313",
+        "product_name": "Band of Hearts Ring",
+        "quantity": 1,
+        "price": 40
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-12",
+      "shipped": "2026-02-13",
+      "estimated_delivery": "2026-02-16",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-12T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-13T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-13T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-14T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-15T10:00:00Z",
+        "status": "delayed",
+        "location": "Regional Hub",
+        "description": "Delivery delayed - parcel held at depot"
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-065",
+    "order_id": "ORD-10065",
+    "tracking_number": "FDX010051473504",
+    "status": "delayed",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Ava Martin",
+      "email": "ava.martin@example.com",
+      "phone": "+447079012288"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "92 Queen's Avenue",
+      "city": "Cardiff",
+      "postcode": "CF10 1EP",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "798907C01",
+        "product_name": "Disney Pixar Toy Story Alien Charm",
+        "quantity": 1,
+        "price": 35
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-13",
+      "shipped": "2026-02-14",
+      "estimated_delivery": "2026-02-17",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-13T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-14T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-14T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-15T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-16T10:00:00Z",
+        "status": "delayed",
+        "location": "Regional Hub",
+        "description": "Delivery delayed - parcel held at depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-066",
+    "order_id": "ORD-10066",
+    "tracking_number": "RM100522654GB",
+    "status": "delayed",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Daniel Jackson",
+      "email": "daniel.jackson@example.com",
+      "phone": "+447080246855"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "99 Park Road",
+      "city": "Bristol",
+      "postcode": "BS1 1HT",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "192316C01",
+        "product_name": "Sparkling Pavé Tennis Bracelet",
+        "quantity": 1,
+        "price": 120
+      },
+      {
+        "product_id": "150100",
+        "product_name": "Round Sparkle Halo Ring",
+        "quantity": 1,
+        "price": 80
+      },
+      {
+        "product_id": "399259C02",
+        "product_name": "Game of Thrones Dragon Dangle Charm",
+        "quantity": 1,
+        "price": 35
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-14",
+      "shipped": "2026-02-15",
+      "estimated_delivery": "2026-02-18",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-14T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-15T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-15T14:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      },
+      {
+        "timestamp": "2026-02-16T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-17T10:00:00Z",
+        "status": "delayed",
+        "location": "Regional Hub",
+        "description": "Delivery delayed - parcel held at depot"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-067",
+    "order_id": "ORD-10067",
+    "tracking_number": "DPD1005305731",
+    "status": "ordered",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Grace Turner",
+      "email": "grace.turner@example.com",
+      "phone": "+447081481422"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "106 Station Road",
+      "city": "Leeds",
+      "postcode": "LS1 1UR",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "188421",
+        "product_name": "Pandora Reflexions Mesh Bracelet",
+        "quantity": 1,
+        "price": 50
+      },
+      {
+        "product_id": "180188",
+        "product_name": "Pandora Moments Heart Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 60
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-15",
+      "shipped": null,
+      "estimated_delivery": "2026-02-19",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-15T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-068",
+    "order_id": "ORD-10068",
+    "tracking_number": "HME1005384922",
+    "status": "ordered",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Alexander Phillips",
+      "email": "alexander.phillips@example.com",
+      "phone": "+447082715989"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "113 London Road",
+      "city": "Glasgow",
+      "postcode": "G1 1DN",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "149591C00",
+        "product_name": "Pandora Moments Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 65
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-16",
+      "shipped": null,
+      "estimated_delivery": "2026-02-20",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-16T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-069",
+    "order_id": "ORD-10069",
+    "tracking_number": "DHL1005464113",
+    "status": "picked",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Freya Baker",
+      "email": "freya.baker@example.com",
+      "phone": "+447083950556"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "120 Mill Lane",
+      "city": "Liverpool",
+      "postcode": "L1 1JD",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "169398C01",
+        "product_name": "Sparkling Wishbone Heart Ring",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-17",
+      "shipped": null,
+      "estimated_delivery": "2026-02-21",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-17T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-18T09:00:00Z",
+        "status": "picked",
+        "location": "Lutterworth DC",
+        "description": "Items picked and packed for dispatch"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-070",
+    "order_id": "ORD-10070",
+    "tracking_number": "FDX010055433004",
+    "status": "exception",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Henry Mitchell",
+      "email": "henry.mitchell@example.com",
+      "phone": "+447085185123"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "7 The Crescent",
+      "city": "Nottingham",
+      "postcode": "NG1 1AB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "192830C01",
+        "product_name": "Celestial Sparkling Star Stud Earrings",
+        "quantity": 1,
+        "price": 40
+      },
+      {
+        "product_id": "590528",
+        "product_name": "Pandora Moments Barrel Clasp Snake Chain Bracelet",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-18",
+      "shipped": "2026-02-19",
+      "estimated_delivery": "2026-02-22",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-18T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-19T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-19T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-20T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-21T11:00:00Z",
+        "status": "exception",
+        "location": "Nottingham",
+        "description": "Exception - delivery issue reported"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-071",
+    "order_id": "ORD-10071",
+    "tracking_number": "RM100562249GB",
+    "status": "exception",
+    "carrier": "Royal Mail",
+    "customer": {
+      "name": "Ella Carter",
+      "email": "ella.carter@example.com",
+      "phone": "+447086419690"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "14 Elm Street",
+      "city": "Sheffield",
+      "postcode": "S1 1WB",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "599505C01",
+        "product_name": "Sparkling Infinity Stud Earrings",
+        "quantity": 1,
+        "price": 45
+      },
+      {
+        "product_id": "168290C01",
+        "product_name": "Sparkling Daisy Flower Trio Ring",
+        "quantity": 1,
+        "price": 60
+      },
+      {
+        "product_id": "169398C01",
+        "product_name": "Sparkling Wishbone Heart Ring",
+        "quantity": 1,
+        "price": 55
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-19",
+      "shipped": "2026-02-20",
+      "estimated_delivery": "2026-02-23",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-19T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-20T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Royal Mail"
+      },
+      {
+        "timestamp": "2026-02-20T14:00:00Z",
+        "status": "in_transit",
+        "location": "Royal Mail Sorting Office",
+        "description": "Parcel received at Royal Mail Sorting Office"
+      },
+      {
+        "timestamp": "2026-02-21T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-22T11:00:00Z",
+        "status": "exception",
+        "location": "Sheffield",
+        "description": "Exception - delivery issue reported"
+      }
+    ],
+    "flags": {
+      "gift": true,
+      "signature_required": false,
+      "insurance": true
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-072",
+    "order_id": "ORD-10072",
+    "tracking_number": "DPD1005701681",
+    "status": "returned",
+    "carrier": "DPD",
+    "customer": {
+      "name": "Samuel Campbell",
+      "email": "samuel.campbell@example.com",
+      "phone": "+447087654257"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "21 Oak Drive",
+      "city": "Newcastle",
+      "postcode": "NE1 4ST",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "580702",
+        "product_name": "Pandora ME Link Chain Bracelet",
+        "quantity": 1,
+        "price": 95
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-20",
+      "shipped": "2026-02-21",
+      "estimated_delivery": "2026-02-24",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-20T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-21T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DPD"
+      },
+      {
+        "timestamp": "2026-02-21T14:00:00Z",
+        "status": "in_transit",
+        "location": "DPD Hub",
+        "description": "Parcel received at DPD Hub"
+      },
+      {
+        "timestamp": "2026-02-22T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-23T14:00:00Z",
+        "status": "delivered",
+        "location": "Newcastle",
+        "description": "Delivered to recipient"
+      },
+      {
+        "timestamp": "2026-02-26T10:00:00Z",
+        "status": "return_initiated",
+        "location": "Newcastle",
+        "description": "Return initiated by customer"
+      },
+      {
+        "timestamp": "2026-02-28T09:00:00Z",
+        "status": "returned",
+        "location": "Lutterworth DC",
+        "description": "Return received at distribution centre"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-073",
+    "order_id": "ORD-10073",
+    "tracking_number": "HME1005780872",
+    "status": "returned",
+    "carrier": "Hermes/Evri",
+    "customer": {
+      "name": "Poppy Murray",
+      "email": "poppy.murray@example.com",
+      "phone": "+447088888824"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "28 Maple Close",
+      "city": "Brighton",
+      "postcode": "BN1 1AE",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "196313",
+        "product_name": "Band of Hearts Ring",
+        "quantity": 1,
+        "price": 40
+      },
+      {
+        "product_id": "163291C01",
+        "product_name": "Blue Pansy Flower Pendant Necklace",
+        "quantity": 1,
+        "price": 70
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-21",
+      "shipped": "2026-02-22",
+      "estimated_delivery": "2026-02-25",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-21T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-22T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via Hermes/Evri"
+      },
+      {
+        "timestamp": "2026-02-22T14:00:00Z",
+        "status": "in_transit",
+        "location": "Evri Distribution Centre",
+        "description": "Parcel received at Evri Distribution Centre"
+      },
+      {
+        "timestamp": "2026-02-23T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-24T14:00:00Z",
+        "status": "delivered",
+        "location": "Brighton",
+        "description": "Delivered to recipient"
+      },
+      {
+        "timestamp": "2026-02-27T10:00:00Z",
+        "status": "return_initiated",
+        "location": "Brighton",
+        "description": "Return initiated by customer"
+      },
+      {
+        "timestamp": "2026-02-29T09:00:00Z",
+        "status": "returned",
+        "location": "Lutterworth DC",
+        "description": "Return received at distribution centre"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": true,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-074",
+    "order_id": "ORD-10074",
+    "tracking_number": "DHL1005860063",
+    "status": "returned",
+    "carrier": "DHL",
+    "customer": {
+      "name": "Benjamin Anderson",
+      "email": "benjamin.anderson@example.com",
+      "phone": "+447090123391"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "35 Cedar Way",
+      "city": "Oxford",
+      "postcode": "OX1 1BX",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "792691C01",
+        "product_name": "Galaxy Sparkling Star Charm",
+        "quantity": 1,
+        "price": 45
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-22",
+      "shipped": "2026-02-23",
+      "estimated_delivery": "2026-02-26",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-22T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-23T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via DHL"
+      },
+      {
+        "timestamp": "2026-02-23T14:00:00Z",
+        "status": "in_transit",
+        "location": "DHL Express Hub",
+        "description": "Parcel received at DHL Express Hub"
+      },
+      {
+        "timestamp": "2026-02-24T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-25T14:00:00Z",
+        "status": "delivered",
+        "location": "Oxford",
+        "description": "Delivered to recipient"
+      },
+      {
+        "timestamp": "2026-02-28T10:00:00Z",
+        "status": "return_initiated",
+        "location": "Oxford",
+        "description": "Return initiated by customer"
+      },
+      {
+        "timestamp": "2026-02-30T09:00:00Z",
+        "status": "returned",
+        "location": "Lutterworth DC",
+        "description": "Return received at distribution centre"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  },
+  {
+    "shipment_id": "SHP-075",
+    "order_id": "ORD-10075",
+    "tracking_number": "FDX010059392504",
+    "status": "returned",
+    "carrier": "FedEx",
+    "customer": {
+      "name": "Rosie Scott",
+      "email": "rosie.scott@example.com",
+      "phone": "+447091357958"
+    },
+    "shipping_address": {
+      "line1": "Pandora Distribution Centre",
+      "line2": "Unit 7, Magna Park",
+      "city": "Lutterworth",
+      "postcode": "LE17 4XN",
+      "country": "UK"
+    },
+    "delivery_address": {
+      "line1": "42 Birch Lane",
+      "city": "Cambridge",
+      "postcode": "CB1 1JW",
+      "country": "UK"
+    },
+    "items": [
+      {
+        "product_id": "150100",
+        "product_name": "Round Sparkle Halo Ring",
+        "quantity": 1,
+        "price": 80
+      }
+    ],
+    "dates": {
+      "ordered": "2026-02-23",
+      "shipped": "2026-02-24",
+      "estimated_delivery": "2026-02-27",
+      "actual_delivery": null
+    },
+    "tracking_events": [
+      {
+        "timestamp": "2026-02-23T10:00:00Z",
+        "status": "order_placed",
+        "location": "Online",
+        "description": "Order confirmed and payment received"
+      },
+      {
+        "timestamp": "2026-02-24T09:00:00Z",
+        "status": "dispatched",
+        "location": "Lutterworth DC",
+        "description": "Parcel dispatched via FedEx"
+      },
+      {
+        "timestamp": "2026-02-24T14:00:00Z",
+        "status": "in_transit",
+        "location": "FedEx Sort Facility",
+        "description": "Parcel received at FedEx Sort Facility"
+      },
+      {
+        "timestamp": "2026-02-25T08:00:00Z",
+        "status": "in_transit",
+        "location": "Regional Hub",
+        "description": "Parcel in transit to local depot"
+      },
+      {
+        "timestamp": "2026-02-26T14:00:00Z",
+        "status": "delivered",
+        "location": "Cambridge",
+        "description": "Delivered to recipient"
+      },
+      {
+        "timestamp": "2026-02-29T10:00:00Z",
+        "status": "return_initiated",
+        "location": "Cambridge",
+        "description": "Return initiated by customer"
+      },
+      {
+        "timestamp": "2026-02-31T09:00:00Z",
+        "status": "returned",
+        "location": "Lutterworth DC",
+        "description": "Return received at distribution centre"
+      }
+    ],
+    "flags": {
+      "gift": false,
+      "signature_required": false,
+      "insurance": false
+    },
+    "delay_reason": null
+  }
+]
