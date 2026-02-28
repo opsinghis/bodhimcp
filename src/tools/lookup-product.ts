@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { lookupById } from '../catalog/loader.js';
+import { lookupById } from '../catalog/loader';
 
 export const lookupProductSchema = {
   productId: z.string().describe('Pandora product ID, e.g. "142784C01" or "149591C00"'),

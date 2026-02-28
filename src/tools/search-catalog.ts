@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { searchCatalog as search } from '../catalog/search-engine.js';
+import { searchCatalog as search } from '../catalog/search-engine';
 
 export const searchCatalogSchema = {
   query: z.string().optional().describe('Text search across product name and description'),

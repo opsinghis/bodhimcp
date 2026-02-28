@@ -1,15 +1,15 @@
 import { createMcpHandler } from 'mcp-handler';
-import { lookupProduct, lookupProductSchema } from '../src/tools/lookup-product.js';
-import { searchCatalog, searchCatalogSchema } from '../src/tools/search-catalog.js';
+import { lookupProduct, lookupProductSchema } from '@/src/tools/lookup-product';
+import { searchCatalog, searchCatalogSchema } from '@/src/tools/search-catalog';
 import {
   searchCompetitorContent,
   searchCompetitorSchema,
-} from '../src/tools/search-competitor.js';
+} from '@/src/tools/search-competitor';
 import {
   checkAiVisibility,
   checkAiVisibilitySchema,
-} from '../src/tools/check-ai-visibility.js';
-import { saveAeoOutput, saveAeoOutputSchema } from '../src/tools/save-aeo-output.js';
+} from '@/src/tools/check-ai-visibility';
+import { saveAeoOutput, saveAeoOutputSchema } from '@/src/tools/save-aeo-output';
 
 const handler = createMcpHandler(
   server => {
@@ -36,7 +36,6 @@ const handler = createMcpHandler(
 
     server.tool(
       'check_ai_visibility',
-      
       'Check how a Pandora product appears in Google search results for specific queries. Returns ranking position, whether Pandora is mentioned, and top 5 results. Requires SERPER_API_KEY env var.',
       checkAiVisibilitySchema,
       async params => checkAiVisibility(params),

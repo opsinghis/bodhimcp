@@ -1,5 +1,5 @@
-import type { Product, SearchFilters } from './types.js';
-import { getCatalog } from './loader.js';
+import type { Product, SearchFilters } from './types';
+import { getCatalog } from './loader';
 
 const COLLECTIONS = [
   'Pandora Moments',

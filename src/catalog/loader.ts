@@ -1,4 +1,4 @@
-import type { Product } from './types.js';
+import type { Product } from './types';
 
 let catalog: Product[] | null = null;
 let productMap: Map<string, Product> | null = null;
