@@ -1,0 +1,221 @@
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+.heroDesc {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 640px;
+  margin: 0 auto 1.5rem;
+}
+
+.statsRow {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat {
+  text-align: center;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Content area with fade-in */
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Tool card */
+.toolCard {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1rem;
+}
+
+.toolName {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.toolDesc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Workflow flow */
+.workflow {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.nodeRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.parallelGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.parallelGroup .node {
+  flex: 1;
+  min-width: 180px;
+}
+
+.node {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.6rem 0;
+}
+
+.nodeNumber {
+  flex-shrink: 0;
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  border: 2px solid;
+}
+
+.nodeNumber[data-type='agent'] {
+  border-style: solid;
+}
+
+.nodeNumber[data-type='router'] {
+  border-style: dashed;
+}
+
+.nodeNumber[data-type='ui'] {
+  border-style: dotted;
+}
+
+.nodeBody {
+  flex: 1;
+  min-width: 0;
+}
+
+.nodeLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.nodeDesc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.connector {
+  width: 2px;
+  height: 1rem;
+  margin-left: 0.85rem;
+}
+
+/* Features */
+.featureItem {
+  padding: 0.5rem 0;
+}
+
+.featureTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.15rem;
+}
+
+.featureDesc {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .page {
+    padding: 1.25rem 1rem 3rem;
+  }
+
+  .heroTitle {
+    font-size: 1.35rem;
+  }
+
+  .statsRow {
+    gap: 1.25rem;
+  }
+
+  .parallelGroup {
+    flex-direction: column;
+  }
+}
