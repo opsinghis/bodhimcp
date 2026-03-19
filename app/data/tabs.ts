@@ -7,7 +7,7 @@ export type TabData = {
   description: string;
   stats: { value: string; label: string }[];
   tools: { name: string; description: string }[];
-  workflowNodes: { label: string; description: string; type: string; parallel?: boolean }[];
+  workflowNodes: { label: string; description: string; type: string; parallel?: boolean; loopBack?: string }[];
   features: { title: string; description: string }[];
 };
 
@@ -97,13 +97,13 @@ export const tabs: TabData[] = [
     label: 'Shopping Assistant',
     color: 'var(--tab-shopping)',
     badge: 'Agentic Commerce',
-    title: 'Full-Funnel AI Shopping Experience',
+    title: 'Conversational AI Shopping Experience',
     description:
-      'An end-to-end agentic commerce workflow that handles discovery, comparison, gift curation, expert advice, and checkout — with inventory validation, purchase-readiness scoring, and branded response composition.',
+      'A multi-turn agentic commerce workflow that maintains conversation context across turns — handling discovery, comparison, gift curation, expert advice, and checkout as a continuous dialogue with session memory, refinement loops, and purchase-readiness scoring.',
     stats: [
       { value: '16', label: 'Total Tools' },
-      { value: '15', label: 'Nodes' },
-      { value: '4', label: 'Phases' },
+      { value: '18', label: 'Nodes' },
+      { value: '5', label: 'Phases' },
     ],
     tools: [
       { name: 'get_product_recommendations', description: 'Return personalized product suggestions based on occasion, budget, recipient, and browsing context.' },
@@ -113,28 +113,38 @@ export const tabs: TabData[] = [
       { name: 'create_order', description: 'Submit a finalized order with validated items, shipping address, and payment method reference.' },
     ],
     workflowNodes: [
-      { label: 'User Message', description: 'Receive natural-language shopping request', type: 'ui' },
-      { label: 'Context Extraction', description: 'Extract occasion, budget, recipient, preferences via NLU', type: 'agent' },
-      { label: 'Intent Router', description: 'Route to one of 5 fulfillment paths based on intent', type: 'router' },
+      // Phase 1: Intake
+      { label: 'User Message', description: 'Receive natural-language shopping request or follow-up', type: 'ui' },
+      { label: 'Session Memory', description: 'Load conversation history, cart state, and accumulated preferences from prior turns', type: 'agent' },
+      { label: 'Context Merger', description: 'Merge new message with session context — resolve references like "the first one" or "something cheaper"', type: 'agent' },
+      // Phase 2: Understanding
+      { label: 'Intent Router', description: 'Route to one of 5 fulfillment paths, or handle clarification / refinement of a previous result', type: 'router' },
+      // Phase 3: Fulfillment
       { label: 'Product Discovery', description: 'Search catalog and return personalized recommendations', type: 'agent', parallel: true },
       { label: 'Product Comparison', description: 'Build side-by-side comparison tables for shortlisted items', type: 'agent', parallel: true },
       { label: 'Gift Curator', description: 'Assemble gift bundles with wrapping and occasion-appropriate messaging', type: 'agent', parallel: true },
       { label: 'Style Expert', description: 'Provide expert jewelry advice on materials, sizing, and care', type: 'agent', parallel: true },
       { label: 'Order Tracker', description: 'Check status of existing orders via shipment tracking tools', type: 'agent', parallel: true },
+      // Phase 4: Validation + Conversion
       { label: 'Inventory Gate', description: 'Validate stock availability before proceeding to checkout', type: 'agent' },
       { label: 'Purchase Readiness', description: 'Score whether the customer is ready to buy or needs more info', type: 'router' },
       { label: 'Checkout Flow', description: 'Guide the customer through address, payment, and order confirmation', type: 'agent' },
       { label: 'Nurture Path', description: 'Provide additional information, alternatives, or save for later', type: 'agent' },
       { label: 'Response Composer', description: 'Assemble branded, on-tone response with product cards and CTAs', type: 'agent' },
-      { label: 'Feedback Capture', description: 'Collect implicit and explicit signals for personalization', type: 'agent' },
-      { label: 'End', description: 'Return final response to user', type: 'ui' },
+      { label: 'Feedback Capture', description: 'Collect implicit and explicit signals to update session preferences', type: 'agent' },
+      // Phase 5: Conversation Loop
+      { label: 'Session Update', description: 'Persist updated cart, preferences, and conversation history to session memory', type: 'agent' },
+      { label: 'Conversation Router', description: 'If conversation continues → loop back to User Message; if order placed or user exits → end', type: 'router', loopBack: 'User Message' },
+      { label: 'End', description: 'Session complete — return order confirmation or farewell with saved preferences', type: 'ui' },
     ],
     features: [
-      { title: 'NLU context extraction', description: 'Parses occasion, budget range, recipient profile, and style preferences from free-text input.' },
-      { title: '5-way intent routing', description: 'Routes to Discovery, Comparison, Gift Curation, Expert Advice, or Order Tracking based on intent signals.' },
+      { title: 'Multi-turn session memory', description: 'Persists conversation history, cart contents, and accumulated preferences across turns — enabling references like "show me something cheaper" or "add the first one to my cart".' },
+      { title: 'Contextual reference resolution', description: 'Resolves anaphora and relative references ("the blue one", "similar but in gold") by merging new input with full session context.' },
+      { title: '5-way intent routing', description: 'Routes to Discovery, Comparison, Gift Curation, Expert Advice, or Order Tracking — and re-routes on follow-up turns without restarting.' },
       { title: 'Inventory validation gate', description: 'Blocks checkout for out-of-stock items and suggests available alternatives automatically.' },
-      { title: 'Purchase readiness decision', description: 'Scores customer readiness and routes to checkout or nurture path accordingly.' },
-      { title: 'Branded response composition', description: 'Assembles responses in Pandora\'s brand voice with product cards, imagery, and contextual CTAs.' },
+      { title: 'Purchase readiness scoring', description: 'Scores customer readiness each turn and routes to checkout when confident, or continues the conversation to gather more signal.' },
+      { title: 'Conversation loop with graceful exit', description: 'Automatically loops back for the next user message until an order is placed, the user exits, or the session times out.' },
+      { title: 'Branded response composition', description: 'Assembles responses in Pandora\'s brand voice with product cards, imagery, and contextual CTAs — adapting tone as the conversation progresses.' },
     ],
   },
 ];

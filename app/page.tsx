@@ -44,18 +44,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Tools */}
-        <WorkflowCard title="MCP Tools" variant="grid">
-          {tab.tools.map((tool) => (
-            <div key={tool.name} className={styles.toolCard}>
-              <div className={styles.toolName} style={{ color: accent }}>
-                {tool.name}
-              </div>
-              <div className={styles.toolDesc}>{tool.description}</div>
-            </div>
-          ))}
-        </WorkflowCard>
-
         {/* Workflow */}
         <WorkflowCard title="Workflow Architecture">
           <div className={styles.workflow}>
@@ -78,6 +66,18 @@ export default function Home() {
           </div>
         </WorkflowCard>
 
+        {/* Tools */}
+        <WorkflowCard title="MCP Tools" variant="grid">
+          {tab.tools.map((tool) => (
+            <div key={tool.name} className={styles.toolCard}>
+              <div className={styles.toolName} style={{ color: accent }}>
+                {tool.name}
+              </div>
+              <div className={styles.toolDesc}>{tool.description}</div>
+            </div>
+          ))}
+        </WorkflowCard>
+
         {/* Features */}
         <WorkflowCard title="Key Features">
           {tab.features.map((f) => (
@@ -92,7 +92,7 @@ export default function Home() {
   );
 }
 
-type IndexedNode = { label: string; description: string; type: string; parallel?: boolean; index: number };
+type IndexedNode = { label: string; description: string; type: string; parallel?: boolean; loopBack?: string; index: number };
 
 function groupWorkflowNodes(
   nodes: { label: string; description: string; type: string; parallel?: boolean }[]
@@ -133,6 +133,11 @@ function NodeItem({ node, accent }: { node: IndexedNode; accent: string }) {
       <div className={styles.nodeBody}>
         <div className={styles.nodeLabel}>{node.label}</div>
         <div className={styles.nodeDesc}>{node.description}</div>
+        {node.loopBack && (
+          <div className={styles.loopBack} style={{ color: accent, borderColor: accent }}>
+            ↩ Loop back to {node.loopBack}
+          </div>
+        )}
       </div>
     </div>
   );

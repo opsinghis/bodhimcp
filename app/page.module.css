@@ -178,6 +178,18 @@
   line-height: 1.4;
 }
 
+.loopBack {
+  display: inline-block;
+  margin-top: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  border: 1px dashed;
+  border-radius: var(--radius-sm);
+  background: rgba(168, 212, 160, 0.08);
+}
+
 .connector {
   width: 2px;
   height: 1rem;
