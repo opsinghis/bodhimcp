@@ -102,8 +102,8 @@ export const tabs: TabData[] = [
       'A multi-turn agentic commerce workflow that maintains conversation context across turns — handling discovery, comparison, gift curation, expert advice, and checkout as a continuous dialogue with session memory, refinement loops, and purchase-readiness scoring.',
     stats: [
       { value: '18', label: 'Total Tools' },
-      { value: '18', label: 'Nodes' },
-      { value: '5', label: 'Phases' },
+      { value: '22', label: 'Nodes' },
+      { value: '6', label: 'Phases' },
     ],
     tools: [
       { name: 'get_product_recommendations', description: 'Return personalized product suggestions based on occasion, budget, recipient, and browsing context.' },
@@ -118,7 +118,8 @@ export const tabs: TabData[] = [
       // Phase 1: Intake
       { label: 'User Message', description: 'Receive natural-language shopping request or follow-up', type: 'ui' },
       { label: 'Session Memory', description: 'Call load_session to restore conversation history, cart state, and preferences from prior turns via Vercel Blob', type: 'agent' },
-      { label: 'Context Merger', description: 'Merge new message with session context — resolve references like "the first one" or "something cheaper"', type: 'agent' },
+      { label: 'Context Extraction', description: 'NLU agent — parse customer message into structured intent, product IDs, preferences, and purchase readiness', type: 'agent' },
+      { label: 'Context Merger', description: 'Merge new extraction with session memory — resolve references like "the first one" or "something cheaper" using prior turn context', type: 'agent' },
       // Phase 2: Understanding
       { label: 'Intent Router', description: 'Route to one of 5 fulfillment paths, or handle clarification / refinement of a previous result', type: 'router' },
       // Phase 3: Fulfillment
@@ -133,8 +134,12 @@ export const tabs: TabData[] = [
       { label: 'Checkout Flow', description: 'Guide the customer through address, payment, and order confirmation', type: 'agent' },
       { label: 'Nurture Path', description: 'Provide additional information, alternatives, or save for later', type: 'agent' },
       { label: 'Response Composer', description: 'Assemble branded, on-tone response with product cards and CTAs', type: 'agent' },
-      { label: 'Feedback Capture', description: 'Collect implicit and explicit signals to update session preferences', type: 'agent' },
-      // Phase 5: Conversation Loop
+      // Phase 5: Follow-up Interaction
+      { label: 'Customer Follow-Up', description: 'Show results and capture customer response — select a product, refine search, or exit', type: 'ui' },
+      { label: 'Follow-Up Router', description: 'Route by follow-up intent: SELECT_PRODUCT → checkout, REFINE → save & exit, EXIT → end session', type: 'router' },
+      { label: 'Selection Handler', description: 'Resolve product selection from follow-up ("the first one", product ID), verify inventory, and create order', type: 'agent' },
+      { label: 'Follow-Up Composer', description: 'Compose branded order confirmation or selection clarification response', type: 'agent' },
+      // Phase 6: Conversation Loop
       { label: 'Session Update', description: 'Call save_session to persist updated cart, preferences, and conversation history to Vercel Blob', type: 'agent' },
       { label: 'Conversation Router', description: 'Workflow ends; if continue=true, session is saved and next user message re-triggers the workflow with full context restored', type: 'router', loopBack: 'User Message' },
       { label: 'End', description: 'Session complete — return order confirmation or farewell with saved preferences', type: 'ui' },
@@ -145,6 +150,7 @@ export const tabs: TabData[] = [
       { title: '5-way intent routing', description: 'Routes to Discovery, Comparison, Gift Curation, Expert Advice, or Order Tracking — and re-routes on follow-up turns without restarting.' },
       { title: 'Inventory validation gate', description: 'Blocks checkout for out-of-stock items and suggests available alternatives automatically.' },
       { title: 'Purchase readiness scoring', description: 'Scores customer readiness each turn and routes to checkout when confident, or continues the conversation to gather more signal.' },
+      { title: 'In-workflow product selection', description: 'After showing results, a follow-up UI captures the customer\'s choice. Selection Handler resolves "the first one" or product names to IDs, verifies inventory, and completes checkout — all in one workflow run.' },
       { title: 'External re-invocation loop', description: 'Each turn saves session state to Vercel Blob. Next user message re-triggers the workflow from start — Session Memory restores full context. Graceful exit after order, farewell, or 10 turns.' },
       { title: 'Branded response composition', description: 'Assembles responses in Pandora\'s brand voice with product cards, imagery, and contextual CTAs — adapting tone as the conversation progresses.' },
     ],
