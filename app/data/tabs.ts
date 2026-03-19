@@ -101,7 +101,7 @@ export const tabs: TabData[] = [
     description:
       'A multi-turn agentic commerce workflow that maintains conversation context across turns — handling discovery, comparison, gift curation, expert advice, and checkout as a continuous dialogue with session memory, refinement loops, and purchase-readiness scoring.',
     stats: [
-      { value: '16', label: 'Total Tools' },
+      { value: '18', label: 'Total Tools' },
       { value: '18', label: 'Nodes' },
       { value: '5', label: 'Phases' },
     ],
@@ -111,11 +111,13 @@ export const tabs: TabData[] = [
       { name: 'build_bundle', description: 'Compose a gift bundle from compatible products with combined pricing and packaging options.' },
       { name: 'check_inventory', description: 'Verify real-time stock availability for one or more SKUs across warehouses.' },
       { name: 'create_order', description: 'Submit a finalized order with validated items, shipping address, and payment method reference.' },
+      { name: 'load_session', description: 'Load persisted session state (conversation history, cart, preferences) from Vercel Blob by session ID for multi-turn continuity.' },
+      { name: 'save_session', description: 'Persist session state to Vercel Blob at end of each turn, enabling seamless conversation across workflow re-invocations.' },
     ],
     workflowNodes: [
       // Phase 1: Intake
       { label: 'User Message', description: 'Receive natural-language shopping request or follow-up', type: 'ui' },
-      { label: 'Session Memory', description: 'Load conversation history, cart state, and accumulated preferences from prior turns', type: 'agent' },
+      { label: 'Session Memory', description: 'Call load_session to restore conversation history, cart state, and preferences from prior turns via Vercel Blob', type: 'agent' },
       { label: 'Context Merger', description: 'Merge new message with session context — resolve references like "the first one" or "something cheaper"', type: 'agent' },
       // Phase 2: Understanding
       { label: 'Intent Router', description: 'Route to one of 5 fulfillment paths, or handle clarification / refinement of a previous result', type: 'router' },
@@ -133,17 +135,17 @@ export const tabs: TabData[] = [
       { label: 'Response Composer', description: 'Assemble branded, on-tone response with product cards and CTAs', type: 'agent' },
       { label: 'Feedback Capture', description: 'Collect implicit and explicit signals to update session preferences', type: 'agent' },
       // Phase 5: Conversation Loop
-      { label: 'Session Update', description: 'Persist updated cart, preferences, and conversation history to session memory', type: 'agent' },
-      { label: 'Conversation Router', description: 'If conversation continues → loop back to User Message; if order placed or user exits → end', type: 'router', loopBack: 'User Message' },
+      { label: 'Session Update', description: 'Call save_session to persist updated cart, preferences, and conversation history to Vercel Blob', type: 'agent' },
+      { label: 'Conversation Router', description: 'Workflow ends; if continue=true, session is saved and next user message re-triggers the workflow with full context restored', type: 'router', loopBack: 'User Message' },
       { label: 'End', description: 'Session complete — return order confirmation or farewell with saved preferences', type: 'ui' },
     ],
     features: [
-      { title: 'Multi-turn session memory', description: 'Persists conversation history, cart contents, and accumulated preferences across turns — enabling references like "show me something cheaper" or "add the first one to my cart".' },
+      { title: 'Multi-turn session memory', description: 'Persists conversation history, cart contents, and preferences to Vercel Blob via load_session/save_session tools — enabling references like "show me something cheaper" across workflow re-invocations.' },
       { title: 'Contextual reference resolution', description: 'Resolves anaphora and relative references ("the blue one", "similar but in gold") by merging new input with full session context.' },
       { title: '5-way intent routing', description: 'Routes to Discovery, Comparison, Gift Curation, Expert Advice, or Order Tracking — and re-routes on follow-up turns without restarting.' },
       { title: 'Inventory validation gate', description: 'Blocks checkout for out-of-stock items and suggests available alternatives automatically.' },
       { title: 'Purchase readiness scoring', description: 'Scores customer readiness each turn and routes to checkout when confident, or continues the conversation to gather more signal.' },
-      { title: 'Conversation loop with graceful exit', description: 'Automatically loops back for the next user message until an order is placed, the user exits, or the session times out.' },
+      { title: 'External re-invocation loop', description: 'Each turn saves session state to Vercel Blob. Next user message re-triggers the workflow from start — Session Memory restores full context. Graceful exit after order, farewell, or 10 turns.' },
       { title: 'Branded response composition', description: 'Assembles responses in Pandora\'s brand voice with product cards, imagery, and contextual CTAs — adapting tone as the conversation progresses.' },
     ],
   },

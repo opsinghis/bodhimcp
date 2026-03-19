@@ -27,6 +27,8 @@ import { compareProducts, compareProductsSchema } from '@/src/tools/compare-prod
 import { buildBundleTool, buildBundleSchema } from '@/src/tools/build-bundle';
 import { checkInventory, checkInventorySchema } from '@/src/tools/check-inventory';
 import { createOrder, createOrderSchema } from '@/src/tools/create-order';
+import { saveSession, saveSessionSchema } from '@/src/tools/save-session';
+import { loadSession, loadSessionSchema } from '@/src/tools/load-session';
 
 const handler = createMcpHandler(
   server => {
@@ -146,6 +148,22 @@ const handler = createMcpHandler(
       'Create a mock order for Pandora products. Validates product existence and inventory, calculates total price (GBP), generates order ID (ORD-XXXXX), and estimates delivery (3-5 business days). In-memory session — resets on server restart.',
       createOrderSchema,
       async params => createOrder(params),
+    );
+
+    // ── Session Tools (2) ──────────────────────────────────────
+
+    server.tool(
+      'save_session',
+      'Persist shopping assistant session state (conversation history, cart, preferences, products viewed) to Vercel Blob storage. Called by Session-Update-Agent at the end of each turn.',
+      saveSessionSchema,
+      async params => saveSession(params),
+    );
+
+    server.tool(
+      'load_session',
+      'Load a previously saved shopping assistant session by session ID. Returns the full session state if found, or not_found for new conversations. Called by Session-Memory-Agent at the start of each turn.',
+      loadSessionSchema,
+      async params => loadSession(params),
     );
   },
   {
