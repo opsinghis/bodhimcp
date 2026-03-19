@@ -19,6 +19,14 @@ import {
   updateShipmentStatus,
   updateShipmentStatusSchema,
 } from '@/src/tools/update-shipment-status';
+import {
+  getProductRecommendations,
+  getProductRecommendationsSchema,
+} from '@/src/tools/get-product-recommendations';
+import { compareProducts, compareProductsSchema } from '@/src/tools/compare-products';
+import { buildBundleTool, buildBundleSchema } from '@/src/tools/build-bundle';
+import { checkInventory, checkInventorySchema } from '@/src/tools/check-inventory';
+import { createOrder, createOrderSchema } from '@/src/tools/create-order';
 
 const handler = createMcpHandler(
   server => {
@@ -101,6 +109,43 @@ const handler = createMcpHandler(
       'Update a shipment status and append a tracking event. Validates status transitions. In-memory only — resets on server restart. Statuses: ordered → picked → dispatched → in_transit → out_for_delivery → delivered.',
       updateShipmentStatusSchema,
       async params => updateShipmentStatus(params),
+    );
+
+    // ── Shopping Assistant Tools (5) ─────────────────────────────
+
+    server.tool(
+      'get_product_recommendations',
+      'Get personalized Pandora product recommendations by occasion (birthday, anniversary, valentines, mothers_day, graduation, self_treat), recipient (her, him, teen, child), style (classic, modern, bold, minimal), and budget range. Returns scored products with relevance reasoning.',
+      getProductRecommendationsSchema,
+      async params => getProductRecommendations(params),
+    );
+
+    server.tool(
+      'compare_products',
+      'Compare 2-5 Pandora products side-by-side. Returns comparison matrix with price, material, collection, and category for each product, plus highlights (cheapest, most premium, material differences).',
+      compareProductsSchema,
+      async params => compareProducts(params),
+    );
+
+    server.tool(
+      'build_bundle',
+      'Build a curated Pandora gift set from a seed product or occasion. Finds complementary items (e.g. necklace + earrings + bracelet) within budget. Returns bundle with total price and savings narrative.',
+      buildBundleSchema,
+      async params => buildBundleTool(params),
+    );
+
+    server.tool(
+      'check_inventory',
+      'Check stock availability for 1-20 Pandora products. Returns per-product status (in_stock/low_stock/out_of_stock), quantity available, and restock date for out-of-stock items.',
+      checkInventorySchema,
+      async params => checkInventory(params),
+    );
+
+    server.tool(
+      'create_order',
+      'Create a mock order for Pandora products. Validates product existence and inventory, calculates total price (GBP), generates order ID (ORD-XXXXX), and estimates delivery (3-5 business days). In-memory session — resets on server restart.',
+      createOrderSchema,
+      async params => createOrder(params),
     );
   },
   {

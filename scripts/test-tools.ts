@@ -9,6 +9,11 @@ import { getCarrierPerformanceTool } from '../src/tools/get-carrier-performance.
 import { detectDelayedShipmentsTool } from '../src/tools/detect-delayed-shipments.js';
 import { notifyStakeholder } from '../src/tools/notify-stakeholder.js';
 import { updateShipmentStatus } from '../src/tools/update-shipment-status.js';
+import { getProductRecommendations } from '../src/tools/get-product-recommendations.js';
+import { compareProducts } from '../src/tools/compare-products.js';
+import { buildBundleTool } from '../src/tools/build-bundle.js';
+import { checkInventory } from '../src/tools/check-inventory.js';
+import { createOrder } from '../src/tools/create-order.js';
 
 async function test() {
   console.log('=== AEO Tools (5) ===\n');
@@ -82,6 +87,37 @@ async function test() {
     console.log('11. update_shipment_status: OK -', s11.status, inTransit.shipment_id, '→ out_for_delivery');
   }
 
-  console.log('\nAll 11 tools working!');
+  console.log('\n=== Shopping Assistant Tools (5) ===\n');
+
+  // Tool 12: get_product_recommendations
+  const r12 = await getProductRecommendations({ occasion: 'birthday', recipient: 'her', limit: 3 });
+  const s12 = JSON.parse(r12.content[0].text);
+  console.log('12. get_product_recommendations: OK -', s12.total, 'recommendations for birthday/her');
+
+  // Tool 13: compare_products
+  const r13 = await compareProducts({ productIds: ['142784C01', '149591C00', '150100'] });
+  const s13 = JSON.parse(r13.content[0].text);
+  console.log('13. compare_products: OK -', s13.product_count, 'products compared, cheapest:', s13.highlights.cheapest);
+
+  // Tool 14: build_bundle
+  const r14 = await buildBundleTool({ occasion: 'valentines', size: 3 });
+  const s14 = JSON.parse(r14.content[0].text);
+  console.log('14. build_bundle: OK -', s14.item_count, 'items, total: £' + s14.total_price);
+
+  // Tool 15: check_inventory
+  const r15 = await checkInventory({ productIds: ['142784C01', '149591C00', '150100'] });
+  const s15 = JSON.parse(r15.content[0].text);
+  console.log('15. check_inventory: OK -', s15.checked, 'checked (in_stock:', s15.summary.in_stock + ')');
+
+  // Tool 16: create_order
+  const r16 = await createOrder({
+    items: [{ productId: '142784C01', quantity: 1 }],
+    customerEmail: 'test@example.com',
+    shippingPostcode: 'SW1A 1AA',
+  });
+  const s16 = JSON.parse(r16.content[0].text);
+  console.log('16. create_order: OK -', s16.order_id, 'total: £' + s16.total_price, 'delivery:', s16.estimated_delivery);
+
+  console.log('\nAll 16 tools working!');
 }
 test();
