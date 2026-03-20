@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div className={styles.page}>
-      <p className={styles.header}>PANDORA × MCP</p>
+      <p className={styles.header}>BODHI × MCP</p>
 
       <TabBar
         tabs={tabs.map((t) => ({ label: t.label, color: t.color }))}

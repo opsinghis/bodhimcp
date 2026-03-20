@@ -2,7 +2,7 @@ import { z } from 'zod';
 import { lookupById } from '../catalog/loader';
 
 export const lookupProductSchema = {
-  productId: z.string().describe('Pandora product ID, e.g. "142784C01" or "149591C00"'),
+  productId: z.string().describe('Product ID, e.g. "142784C01" or "149591C00"'),
 };
 
 export async function lookupProduct({ productId }: { productId: string }) {

@@ -7,7 +7,7 @@ export const checkInventorySchema = {
     .array(z.string())
     .min(1)
     .max(20)
-    .describe('Array of 1-20 Pandora product IDs to check inventory for'),
+    .describe('Array of 1-20 product IDs to check inventory for'),
 };
 
 export async function checkInventory(params: { productIds: string[] }) {

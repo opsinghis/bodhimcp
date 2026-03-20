@@ -27,7 +27,7 @@ export const tabs: TabData[] = [
     ],
     tools: [
       { name: 'lookup_product', description: 'Retrieve a single product by SKU with full enrichment data including category, materials, price, and images.' },
-      { name: 'search_catalog', description: 'Search the Pandora catalog by keyword, category, or material with paginated results and facet filtering.' },
+      { name: 'search_catalog', description: 'Search the product catalog by keyword, category, or material with paginated results and facet filtering.' },
       { name: 'search_competitor_content', description: 'Analyze competitor product pages for SEO patterns, structured data usage, and content gaps.' },
       { name: 'check_ai_visibility', description: 'Audit a product\'s current AI-engine visibility across 6 AEO dimensions and return a scored report.' },
       { name: 'save_aeo_output', description: 'Persist the final AEO-optimized content bundle (JSON-LD, FAQ, copy) to Vercel Blob storage.' },
@@ -152,7 +152,7 @@ export const tabs: TabData[] = [
       { title: 'Purchase readiness scoring', description: 'Scores customer readiness each turn and routes to checkout when confident, or continues the conversation to gather more signal.' },
       { title: 'In-workflow product selection', description: 'After showing results, a follow-up UI captures the customer\'s choice. Selection Handler resolves "the first one" or product names to IDs, verifies inventory, and completes checkout — all in one workflow run.' },
       { title: 'External re-invocation loop', description: 'Each turn saves session state to Vercel Blob. Next user message re-triggers the workflow from start — Session Memory restores full context. Graceful exit after order, farewell, or 10 turns.' },
-      { title: 'Branded response composition', description: 'Assembles responses in Pandora\'s brand voice with product cards, imagery, and contextual CTAs — adapting tone as the conversation progresses.' },
+      { title: 'Branded response composition', description: 'Assembles responses in the brand\'s voice with product cards, imagery, and contextual CTAs — adapting tone as the conversation progresses.' },
     ],
   },
 ];

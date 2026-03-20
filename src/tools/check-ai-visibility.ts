@@ -27,8 +27,8 @@ export async function checkAiVisibility(params: {
               'AI visibility check requires the SERPER_API_KEY environment variable. Get a free key at https://serper.dev',
             queries: queries.map(q => ({
               query: q,
-              pandoraMentioned: null,
-              pandoraPosition: null,
+              brandMentioned: null,
+              brandPosition: null,
               productNameFound: null,
               topResults: [],
             })),
@@ -54,8 +54,8 @@ export async function checkAiVisibility(params: {
           return {
             query,
             error: `Serper API error: ${searchRes.status}`,
-            pandoraMentioned: null,
-            pandoraPosition: null,
+            brandMentioned: null,
+            brandPosition: null,
             productNameFound: null,
             topResults: [],
           };
@@ -64,20 +64,20 @@ export async function checkAiVisibility(params: {
         const searchData = await searchRes.json();
         const organic = searchData.organic || [];
 
-        const pandoraResults = organic.filter(
+        const brandResults = organic.filter(
           (r: any) =>
-            r.title?.toLowerCase().includes('pandora') ||
-            r.link?.includes('pandora.net'),
+            r.title?.toLowerCase().includes(productName.toLowerCase()) ||
+            r.link?.includes(productName.toLowerCase()),
         );
 
         const productNameLower = productName.toLowerCase();
 
         return {
           query,
-          pandoraMentioned: pandoraResults.length > 0,
-          pandoraPosition:
-            pandoraResults.length > 0
-              ? organic.indexOf(pandoraResults[0]) + 1
+          brandMentioned: brandResults.length > 0,
+          brandPosition:
+            brandResults.length > 0
+              ? organic.indexOf(brandResults[0]) + 1
               : null,
           productNameFound: organic.some(
             (r: any) =>
@@ -88,7 +88,7 @@ export async function checkAiVisibility(params: {
             position: i + 1,
             title: r.title,
             url: r.link,
-            isPandora: !!r.link?.includes('pandora.net'),
+            isBrand: !!r.link?.includes(productName.toLowerCase()),
           })),
           aiOverview: searchData.answerBox || searchData.knowledgeGraph || null,
         };

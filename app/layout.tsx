@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Pandora MCP Showcase',
+  title: 'MCP Workflow Showcase',
   description: 'MCP-powered workflows for AEO, Shipment Tracking, and Shopping Assistant',
 };
 

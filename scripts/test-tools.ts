@@ -23,7 +23,7 @@ async function test() {
   console.log('1. lookup_product: OK -', JSON.parse(r1.content[0].text).product_name);
 
   // Tool 2: search_catalog
-  const r2 = await searchCatalog({ collection: 'Pandora Moments', limit: 2 });
+  const r2 = await searchCatalog({ collection: 'Moments', limit: 2 });
   console.log('2. search_catalog: OK -', JSON.parse(r2.content[0].text).totalResults, 'results');
 
   // Tool 3: search_competitor (no API key)
@@ -31,7 +31,7 @@ async function test() {
   console.log('3. search_competitor: OK -', JSON.parse(r3.content[0].text).status);
 
   // Tool 4: check_ai_visibility (no API key)
-  const r4 = await checkAiVisibility({ queries: ['best pandora charm'], productName: 'Stars Ring' });
+  const r4 = await checkAiVisibility({ queries: ['best jewelry charm'], productName: 'Stars Ring' });
   console.log('4. check_ai_visibility: OK -', JSON.parse(r4.content[0].text).status);
 
   // Tool 5: save_aeo_output (no blob configured)

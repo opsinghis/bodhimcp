@@ -36,14 +36,14 @@ const handler = createMcpHandler(
 
     server.tool(
       'lookup_product',
-      'Look up a Pandora product by product_id from the catalog of 9,488 products. Returns product name, price (GBP), material, description, primary category, and category tags.',
+      'Look up a product by product_id from the catalog of 9,488 products. Returns product name, price (GBP), material, description, primary category, and category tags.',
       lookupProductSchema,
       async params => lookupProduct(params),
     );
 
     server.tool(
       'search_catalog',
-      'Search the Pandora jewelry catalog (9,488 products) by keyword, material, category, collection, or price range. Materials: Gold, Gold plated, Sterling silver, Rose gold plated, Ruthenium plated, Two-tone, Tri-tone, White gold, Grey, No metal. Collections: Pandora Moments, Pandora ME, Pandora Timeless, Pandora Signature, Pandora Disney. Prices in GBP.',
+      'Search the jewelry catalog (9,488 products) by keyword, material, category, collection, or price range. Materials: Gold, Gold plated, Sterling silver, Rose gold plated, Ruthenium plated, Two-tone, Tri-tone, White gold, Grey, No metal. Collections: Moments, ME, Timeless, Signature, Disney. Prices in GBP.',
       searchCatalogSchema,
       async params => searchCatalog(params),
     );
@@ -57,7 +57,7 @@ const handler = createMcpHandler(
 
     server.tool(
       'check_ai_visibility',
-      'Check how a Pandora product appears in Google search results for specific queries. Returns ranking position, whether Pandora is mentioned, and top 5 results. Requires SERPER_API_KEY env var.',
+      'Check how a product appears in Google search results for specific queries. Returns ranking position, whether is mentioned, and top 5 results. Requires SERPER_API_KEY env var.',
       checkAiVisibilitySchema,
       async params => checkAiVisibility(params),
     );
@@ -73,7 +73,7 @@ const handler = createMcpHandler(
 
     server.tool(
       'track_shipment',
-      'Look up a Pandora shipment by shipment ID (SHP-XXX), order ID (ORD-XXXXX), or tracking number. Returns full shipment details including status, carrier, items, tracking events, and delivery dates.',
+      'Look up a shipment by shipment ID (SHP-XXX), order ID (ORD-XXXXX), or tracking number. Returns full shipment details including status, carrier, items, tracking events, and delivery dates.',
       trackShipmentSchema,
       async params => trackShipment(params),
     );
@@ -117,35 +117,35 @@ const handler = createMcpHandler(
 
     server.tool(
       'get_product_recommendations',
-      'Get personalized Pandora product recommendations by occasion (birthday, anniversary, valentines, mothers_day, graduation, self_treat), recipient (her, him, teen, child), style (classic, modern, bold, minimal), and budget range. Returns scored products with relevance reasoning.',
+      'Get personalized product recommendations by occasion (birthday, anniversary, valentines, mothers_day, graduation, self_treat), recipient (her, him, teen, child), style (classic, modern, bold, minimal), and budget range. Returns scored products with relevance reasoning.',
       getProductRecommendationsSchema,
       async params => getProductRecommendations(params),
     );
 
     server.tool(
       'compare_products',
-      'Compare 2-5 Pandora products side-by-side. Returns comparison matrix with price, material, collection, and category for each product, plus highlights (cheapest, most premium, material differences).',
+      'Compare 2-5 products side-by-side. Returns comparison matrix with price, material, collection, and category for each product, plus highlights (cheapest, most premium, material differences).',
       compareProductsSchema,
       async params => compareProducts(params),
     );
 
     server.tool(
       'build_bundle',
-      'Build a curated Pandora gift set from a seed product or occasion. Finds complementary items (e.g. necklace + earrings + bracelet) within budget. Returns bundle with total price and savings narrative.',
+      'Build a curated gift set from a seed product or occasion. Finds complementary items (e.g. necklace + earrings + bracelet) within budget. Returns bundle with total price and savings narrative.',
       buildBundleSchema,
       async params => buildBundleTool(params),
     );
 
     server.tool(
       'check_inventory',
-      'Check stock availability for 1-20 Pandora products. Returns per-product status (in_stock/low_stock/out_of_stock), quantity available, and restock date for out-of-stock items.',
+      'Check stock availability for 1-20 products. Returns per-product status (in_stock/low_stock/out_of_stock), quantity available, and restock date for out-of-stock items.',
       checkInventorySchema,
       async params => checkInventory(params),
     );
 
     server.tool(
       'create_order',
-      'Create a mock order for Pandora products. Validates product existence and inventory, calculates total price (GBP), generates order ID (ORD-XXXXX), and estimates delivery (3-5 business days). In-memory session — resets on server restart.',
+      'Create a mock order for products. Validates product existence and inventory, calculates total price (GBP), generates order ID (ORD-XXXXX), and estimates delivery (3-5 business days). In-memory session — resets on server restart.',
       createOrderSchema,
       async params => createOrder(params),
     );
@@ -168,7 +168,7 @@ const handler = createMcpHandler(
   },
   {
     serverInfo: {
-      name: 'pandora-aeo',
+      name: 'bodhi-mcp',
       version: '1.0.0',
     },
   },

@@ -2,11 +2,11 @@ import type { Product, SearchFilters } from './types';
 import { getCatalog } from './loader';
 
 const COLLECTIONS = [
-  'Pandora Moments',
-  'Pandora ME',
-  'Pandora Timeless',
-  'Pandora Signature',
-  'Pandora Disney',
+  'Moments',
+  'ME',
+  'Timeless',
+  'Signature',
+  'Disney',
 ] as const;
 
 export function searchCatalog(filters: SearchFilters): Product[] {

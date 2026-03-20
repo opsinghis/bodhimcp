@@ -24,14 +24,14 @@ export const searchCatalogSchema = {
     .describe('Filter by category (e.g. "Charms", "Stackable Rings", "Stud Earrings")'),
   collection: z
     .enum([
-      'Pandora Moments',
-      'Pandora ME',
-      'Pandora Timeless',
-      'Pandora Signature',
-      'Pandora Disney',
+      'Moments',
+      'ME',
+      'Timeless',
+      'Signature',
+      'Disney',
     ])
     .optional()
-    .describe('Filter by Pandora collection'),
+    .describe('Filter by collection'),
   minPrice: z.number().optional().describe('Minimum price in GBP'),
   maxPrice: z.number().optional().describe('Maximum price in GBP'),
   limit: z.number().int().min(1).max(50).default(10).describe('Max results to return (default 10)'),

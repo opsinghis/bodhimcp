@@ -10,7 +10,7 @@ export const createOrderSchema = {
   items: z
     .array(
       z.object({
-        productId: z.string().describe('Pandora product ID'),
+        productId: z.string().describe('Product ID'),
         quantity: z.number().min(1).max(10).describe('Quantity to order'),
       }),
     )

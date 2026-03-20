@@ -8,7 +8,7 @@ export const compareProductsSchema = {
     .array(z.string())
     .min(2)
     .max(5)
-    .describe('Array of 2-5 Pandora product IDs to compare'),
+    .describe('Array of 2-5 product IDs to compare'),
 };
 
 export async function compareProducts(params: { productIds: string[] }) {
