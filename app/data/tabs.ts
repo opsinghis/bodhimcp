@@ -11,6 +11,90 @@ export type TabData = {
   features: { title: string; description: string }[];
 };
 
+export type BuilderData = {
+  id: string;
+  label: string;
+  color: string;
+  badge: string;
+  title: string;
+  description: string;
+  stats: { value: string; label: string }[];
+  pipelineSteps: { label: string; description: string; type: 'ui' | 'agent' | 'output' }[];
+  inputExample: string;
+  outputExample: string;
+  features: { title: string; description: string }[];
+};
+
+export const builders: BuilderData[] = [
+  {
+    id: 'design-builder',
+    label: 'Design Doc Generator',
+    color: 'var(--tab-design-builder)',
+    badge: 'Brief → Design Doc',
+    title: 'Generate Full Design Documents from a Brief',
+    description:
+      'Paste a 1-3 sentence requirement and get a complete workflow design document — with architecture diagrams, node specifications, full system prompts, MCP tool definitions, and edge maps. The same format used to build all three production workflows below.',
+    stats: [
+      { value: '9', label: 'Nodes' },
+      { value: '5', label: 'Agents' },
+      { value: '0', label: 'Tools Needed' },
+    ],
+    pipelineSteps: [
+      { label: 'Brief Input', description: 'Paste your requirement, name the workflow, set complexity level (simple/medium/complex)', type: 'ui' },
+      { label: 'Requirements Analyst', description: 'Expands brief into structured requirements: actors, capabilities, data needs, routing logic, tool inventory', type: 'agent' },
+      { label: 'Architecture Designer', description: 'Designs node graph, ASCII diagram, phases, edge map, and design principles', type: 'agent' },
+      { label: 'Node Spec Generator', description: 'Writes full system prompts (300-1500 words each) for every agent, with rules, output formats, and prohibited actions', type: 'agent' },
+      { label: 'Tool Spec Generator', description: 'Designs MCP tools with parameters, returns, mock data schemas, and implementation notes', type: 'agent' },
+      { label: 'Doc Assembler', description: 'Stitches everything into the exact markdown template used by production design docs', type: 'agent' },
+      { label: 'Review & Export', description: 'Review the generated document, request changes, or approve for use with the Workflow Builder', type: 'output' },
+    ],
+    inputExample: 'A shipment tracking agent that detects delivery delays, notifies stakeholders, and handles customer complaints for Pandora e-commerce',
+    outputExample: 'shipment-tracking-workflow-design.md — 8 nodes, 6 tools, switch routing, mock data for 75 shipments, full system prompts',
+    features: [
+      { title: 'Brief-to-detail expansion', description: 'A single sentence becomes a 2000+ word design document with architecture, node specs, and tool definitions — matching the quality of hand-written docs.' },
+      { title: 'Full system prompt generation', description: 'Every agent gets a complete, actionable system prompt with role definition, extraction rules, JSON output format, constraints, and prohibited actions.' },
+      { title: 'MCP tool design', description: 'Automatically designs new MCP tools with parameter schemas, return formats, mock data specifications, and implementation guidance.' },
+      { title: 'Complexity-aware scaling', description: 'Set simple (4-6 nodes), medium (6-12 nodes), or complex (12-25 nodes) — the architecture adapts routing, phases, and tool count accordingly.' },
+      { title: 'Production-format output', description: 'Output matches the exact markdown structure used by AEO, Shipment Tracking, and Shopping Assistant design docs — ready to feed into the Workflow Builder.' },
+    ],
+  },
+  {
+    id: 'workflow-builder',
+    label: 'Workflow Builder',
+    color: 'var(--tab-workflow-builder)',
+    badge: 'Design Doc → Workflow JSON',
+    title: 'Generate Production Workflow JSON from Design Docs',
+    description:
+      'Paste a design document and get a valid workflow JSON that runs directly in the Bodhi workflow engine. Includes 30-point schema validation, auto-fix for minor issues, and an MCP requirements report listing every tool endpoint your server needs.',
+    stats: [
+      { value: '11', label: 'Nodes' },
+      { value: '6', label: 'Agents' },
+      { value: '30', label: 'Validation Points' },
+    ],
+    pipelineSteps: [
+      { label: 'Design Doc Input', description: 'Paste the full markdown design document with node descriptions, agent prompts, and edge maps', type: 'ui' },
+      { label: 'MCP Config Input', description: 'Set the MCP server URL, name, and transport for the generated workflow (sensible defaults provided)', type: 'ui' },
+      { label: 'Doc Parser', description: 'Parses markdown into structured IR: metadata, nodes with verbatim system prompts, edges, tool definitions with parameters', type: 'agent' },
+      { label: 'Node Generator', description: 'Generates complete nodes[] array with all 6 node types, deterministic UUIDs, and variable interpolation', type: 'agent' },
+      { label: 'Edge Generator', description: 'Generates edges[] array: sequential, switch routing, MCP tools connections, and parallel convergence', type: 'agent' },
+      { label: 'Position Layout', description: 'Calculates x,y positions for left-to-right DAG layout with parallel branch fanning', type: 'agent' },
+      { label: 'JSON Assembler', description: 'Combines positioned nodes + edges + viewport into the final workflow JSON structure', type: 'agent' },
+      { label: 'Validator', description: '30-point schema validation, auto-fix for minor issues, cross-reference with design doc, MCP requirements report', type: 'agent' },
+      { label: 'Review & Export', description: 'See validation score, MCP requirements checklist, and the complete JSON — approve or request changes', type: 'output' },
+    ],
+    inputExample: 'aeo-pandora-workflow-design.md (or any design doc in the standard format)',
+    outputExample: 'workflow-aeo-pandora.json — 12 nodes, 20 edges, valid schema, positioned for the visual editor',
+    features: [
+      { title: '30-point schema validation', description: 'Checks structure, node schema, edge integrity, variable interpolation references, and DAG acyclicity — with a pass/fail score.' },
+      { title: 'MCP requirements report', description: 'Lists every tool endpoint the workflow needs: name, purpose, parameters, returns, which agents call it, and an implementation checklist.' },
+      { title: 'Auto-fix for minor issues', description: 'Automatically fixes missing selected:false, layoutDirection, auxiliaryHandlePosition, measured dimensions, and other boilerplate.' },
+      { title: 'System prompt preservation', description: 'System prompts are preserved character-for-character through the entire pipeline — never summarized, truncated, or rephrased.' },
+      { title: 'All 6 node types supported', description: 'Handles control-start, control-end, ui, agent-custom, switch, and mcp-tools nodes with correct schemas for each.' },
+      { title: 'Visual editor ready', description: 'Generated JSON includes measured dimensions and calculated positions — import directly into the Bodhi visual workflow editor.' },
+    ],
+  },
+];
+
 export const tabs: TabData[] = [
   {
     id: 'aeo',
